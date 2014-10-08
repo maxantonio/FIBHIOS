@@ -1,0 +1,159 @@
+                                            /*Compatibilidad con IE8*/
+
+/*fondo negro en 1er parallax*/
+.lt-ie9 section#parallax {
+    background-image: none !important;
+    background-color: black !important;
+}
+
+/*hover en cuadrados*/
+.lt-ie9 .magnifier {
+    filter: Alpha(Opacity=1);
+}
+
+.lt-ie9 .entry:hover .magnifier {
+    filter: Alpha(FinishOpacity=0);
+}
+
+/*flecha en slider*/
+.lt-ie9 .tp-leftarrow {
+    background-image: none;
+}
+
+.lt-ie9 .tp-rightarrow {
+    background-image: none;
+}
+
+/*FIN Compatibilidad con IE8 */
+
+                                                   /*GENERALES*/
+
+.content-wrapper {
+    border-top: 1px #3F8DBF solid;
+}
+
+.arrow-up {
+    display: none;
+}
+
+.theme-layout {
+    padding-bottom: 20px;
+}
+
+.dropcap {
+    font-size: 35px;
+    margin-top: 5px;
+}
+
+p, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: Raleway !important;
+}
+
+.cont-page-title {
+    color: #222222;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.content-wrapper .check li:before {
+    color: black !important;
+}
+
+.content-wrapper .ck-sq li:before {
+    color: black !important;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    padding: 10px;
+}
+
+.legenda {
+    font-size: 0.8em;
+}
+
+.magnifier-hidden {
+    display: none;
+}
+
+.imagen80 {
+    width: 80% !important;
+}
+
+.imagen60 {
+    width: 60% !important;
+}
+
+#slider {
+    max-width:275px;
+    max-height: 183px;
+    position: relative;
+    right: -38%;
+}
+
+#img-container img {
+    height: 121px !important;
+    width: 182px !important;
+}
+
+
+#tabla-datos-propiedad th{
+    background-color: #3F8DBF;
+    color: black;
+}
+
+.th-bg-darkblue{
+    background-color: #3F8DBF;
+    color: black;
+}
+
+ .tr-bg-lightblue {
+     background-color: #A4DAFF;
+     color: black;
+ }
+
+#propiedades-ubicacion .col-md-6 li {
+       height: 50px !important;
+   }
+
+
+.subenbazeado-tabla{
+color: #000000;
+    font-weight: bold;
+}
+
+.th-no-border {
+    border: none !important;
+}
+
+#tabla-grande-propiedad td{
+    text-align: left;
+
+}
+
+
+
+
+
+
+  @media screen and (max-width: 992px) {
+      .margin-bottom-15 {
+          margin-bottom: 15px
+      }
+  }
+
+ @media screen and (max-width: 738px) {
+
+    .imagen100-sm {
+        width: 100% !important;
+    }
+
+}
+
+/* Menu*/
+.navbar-collapse {
+padding-top: 6px;
+}
+
+
+

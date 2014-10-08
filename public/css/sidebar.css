@@ -1,0 +1,227 @@
+/*side bar*/
+
+.content-wrapper ul.list-listings {
+    margin: 0 0 20px 0;
+    padding: 0;
+    list-style: none
+}
+
+.content-wrapper ul.list-listings li {
+    margin-bottom: 30px;
+    border: 1px solid #f3f3f3;
+    overflow: hidden
+}
+
+.content-wrapper ul.list-listings li.featured {
+    border-color: #e91b23
+}
+
+.content-wrapper ul.list-listings li:before, .content-wrapper ul.list-listings li:after {
+    content: "";
+    display: table
+}
+
+.content-wrapper ul.list-listings li:after {
+    clear: both
+}
+
+.content-wrapper ul.list-listings .listing-header {
+    clear: both;
+    padding: 8px 15px;
+    font-weight: 600;
+    text-transform: uppercase
+}
+
+.content-wrapper ul.list-listings .listing-image {
+    width: 25%;
+    height: 150px;
+    float: left;
+    overflow: hidden
+}
+
+.content-wrapper ul.list-listings .listing-body {
+    width: 50%;
+    height: 150px;
+    padding: 15px;
+    float: left;
+    background: #fcfcfc;
+    border-right: 1px solid #fcfcfc
+}
+
+.content-wrapper ul.list-listings .listing-body h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px
+}
+
+.content-wrapper ul.list-listings .listing-body h4 {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 22px
+}
+
+.content-wrapper ul.list-listings .listing-actions {
+    width: 25%;
+    height: 110px;
+    padding-top: 40px;
+    float: left;
+    text-align: center
+}
+
+.content-wrapper ul.list-listings .listing-actions .btn {
+    margin-top: 6px
+}
+
+.content-wrapper ul.list-check {
+    list-style: none;
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0
+}
+
+.content-wrapper ul.list-check li {
+    padding: 4px 0;
+    margin: 0;
+    display: block;
+    width: 100%
+}
+
+.content-wrapper ul.list-check li i {
+    color: #e91b23;
+    font-style: normal;
+    margin-right: 4px
+}
+
+.content-wrapper ul.list-check li span {
+    font-size: 14px
+}
+
+.content-wrapper ul.categories {
+    list-style: none;
+    margin: 0;
+    padding: 0 !important;
+    border: 1px solid #e0eded;
+    overflow: hidden
+}
+
+.content-wrapper ul.categories li {
+    border-bottom: 0px;
+    position: relative;
+}
+
+.content-wrapper ul.categories li:last-child {
+    border: 0
+}
+
+.content-wrapper ul.categories li a {
+    display: block;
+    padding: 10px 15px
+}
+
+.content-wrapper ul.categories li a:after {
+    font-family: 'FontAwesome';
+    content: "\f105";
+    position: relative;
+    top: 0;
+    float: right
+}
+
+.content-wrapper ul.categories li a:hover {
+    background: #276C98;
+    color: #FFF;
+    text-decoration: none
+}
+
+.content-wrapper ul.categories li a i {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 5px;
+    font-style: normal;
+    color: #999;
+    font-size: 11px
+}
+
+.content-wrapper ul.categories li a:hover i {
+    color: #FFF
+}
+
+
+/*quitada la raya de al lado*/
+.section-title:before, .section-title:after{
+    border-bottom: none;
+}
+
+
+
+/*lista con foticos*/
+ul.featured {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+ul.featured li {
+    clear: left;
+    border-bottom: 1px dotted #f1f1f1;
+    padding: 10px 0 0 0;
+    display: block;
+    width: 100%
+}
+
+ul.featured li img {
+    width: 70px
+}
+
+ul.featured li p {
+    margin-left: 80px
+}
+
+ul.featured li i {
+    color: #a1a1a1;
+    display: block;
+    font-style: normal;
+    font-size: 12px
+}
+
+ul.featured li a {
+    font-weight: 500
+}
+
+ul.featured li a:hover {
+    text-decoration: none;
+    color: #464646
+}
+
+ul.featured li span {
+    font-size: 12px
+}
+
+ul.featured li .price {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 5px
+}
+
+ul.featured li .price.discount {
+    text-decoration: line-through;
+    color: #e74c3c;
+    font-size: 13px;
+    margin-right: 8px
+}
+
+ul.featured li img {
+    float: none !important;
+    display: inline;
+}
+
+ul.featured h6 {
+    display: inline;
+    position: relative;
+    left: 20px;
+}
+
+.section-title{
+   font-size: 18px;
+}

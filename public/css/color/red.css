@@ -1,0 +1,429 @@
+/* ----------------------------------------------------
+	RED SCHEMES
+------------------------------------------------------- */
+#header-default .dropdown-menu li a:focus,
+#header-default .dropdown-menu li a:active,
+#header-default .dropdown-menu li a:hover {
+	background-color:#c10909;
+}
+
+.post-type-icon a{
+	color: #ccc;
+}
+
+.post-type-icon-small a{
+	color: #ccc;
+}
+
+.btn-primary-bd:hover,
+.btn-primary-bd:focus,
+.btn-primary-bd:active,
+.btn-primary-bd.active,
+.btn-primary-bd-transparent:hover,
+.btn-primary-bd-transparent:focus,
+.btn-primary-bd-transparent:active,
+.btn-primary-bd-transparent.active
+ {
+	color: #ffffff;
+	background-color: #ce2424;
+	border: 1px solid #ce2424;
+	
+}
+
+.timeline-badge.danger,
+.flex-control-paging li a.flex-active,
+.tparrows:hover {
+	background-color:#ce2424 !important;
+}
+
+.btn-primary-bd{
+	border: 1px solid #ce2424;
+	background-color: #fff;
+	color: #ce2424;
+	font-weight: bold;
+}
+	
+.btn-primary-bd-transparent{
+	border: 1px solid #ce2424;
+	color: #ce2424;
+	font-weight: bold;
+}
+
+.progress {
+	border: 1px solid #ce2424;
+}
+
+.service-icon i {
+	font-size: 60px;
+}
+
+.arrow-left {
+	border-right-color:#ce2424;
+}
+
+#bbpress-forums li.bbp-header, #bbpress-forums li.bbp-footer {
+	border-top-color:#ce2424 !important;	
+}
+
+.buddy_members .popover.top > .arrow:after,
+.buddy_carousel .popover.top > .arrow:after {
+	border-top:10px solid #ce2424 !important;	
+}
+
+.tp-bullets.simplebullets .bullet:hover,
+.tp-bullets.simplebullets .bullet.selected{
+	border-color:#ce2424 !important;	
+}
+
+.post-wrapper-top h2,
+.group_box:hover .circle,
+.group_box:hover,
+.buddy_carousel .popover,
+.buddy_members .popover,
+.buddy_desc,
+.cat_widget:hover,
+.pagination > .active > a, 
+.pagination > .active > span, 
+.pagination > .active > a:hover, 
+.pagination > .active > span:hover, 
+.pagination > .active > a:focus, 
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus,
+.pagination > .active > span:focus,
+.form-control:focus,
+.panel-default > .panel-heading:hover,
+.bggrey,
+.services_vertical .icon-container,
+.item .icon-container,
+#owl-testimonial-widget .img-circle,
+.testimonial-wrap,
+.tparrows:hover,
+.blog_button,
+.magnifier .btn-default:hover,
+blockquote,
+.magnifier .btn-default:focus,
+.magnifier .btn-default:active,
+.service-icon-circle,
+.general-title hr {
+	border-color:#ce2424;
+}
+
+.social_like .icon-container{
+	background-color:#ce2424;
+	color:#efefef;
+}
+
+#header-default .dropdown-menu,
+#header-default .yamm .dropdown.yamm-fw .dropdown-menu,
+#header-style-2 .dropdown-menu,
+#header-style-2 .yamm .dropdown.yamm-fw .dropdown-menu {
+	border-top-color: #ce2424 !important;
+}
+
+
+.home-services li {
+  float: left;
+  width: 25%;
+  padding: 20px 3px;
+  border-right: 1px solid #aa0909;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-transition: width 300ms;
+  -o-transition: width 300ms;
+  transition: width 300ms;
+}
+
+.home-services li:first-child {
+  border-left: 1px solid #aa0909;
+}
+
+@media (max-width: 767px) {
+  .home-services li {
+    display: block;
+    float: none;
+    width: 100%;
+    border-right: 0;
+    border-bottom: 1px solid #aa0909;
+	margin-bottom:20px;
+ }
+}
+
+.meg-menu{border-right: 1px solid #aa0909;}
+
+a.remove:hover{background-color:#ce2424;}
+
+.blog_button,
+.shop_title_slider span,
+.cat_widget h3,
+.rating i,
+.recent_posts_widget > li a:hover,
+.big_title_onepage span,
+.small_thin_grey1 i,
+.popular_items .meta span i,
+.ch-info-front i,
+.service_vertical_box:hover .service-icon i,
+.bgdark span,
+.item .icon-container,
+.slider_title_a,
+.mini_title2 i,
+.team_member span,
+.high_title2,
+.high_title,
+.big_title span,
+.small_title span,
+.mini_title span,
+.check li:before,
+.chevron li:before,
+.hand li:before,
+.ck-sq li:before,
+.service-icon-circle i,
+.service-icon i,
+.servicebox:hover .service-icon i,
+.shop-right .title .price,
+.shop_item .price,
+.widget h3 span,
+.big_title_slider span,
+.big_title_slider_hr span,
+a,.milestone-counter i,
+a.readmore,
+.tabbed-menu li a:hover,
+.footer-menu li a:hover,
+.mmode .title span,
+.footer-menu li a:focus,
+#header-default .yamm h3 i,
+#header-default .yamm-fw .dropdown-menu li a:before,
+#header-style-2 .yamm h3 i,
+#header-style-2 .yamm-fw .dropdown-menu li a:before,
+.group_box i,#three-parallax .testimonial h3,
+#tabbed_widget .nav-tabs > li.active > a,.font-light,
+mark,.blog-meta ul li a:hover,.nav-stacked > li > a:hover{
+	color:#ce2424;
+}
+
+h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover{
+	color:#ce2424 !important;
+}
+
+.demo_changer .demo-icon,
+.group_box:hover .circle,
+.buddy_carousel .owl-controls .owl-page.active span, 
+.buddy_carousel .owl-controls.clickable .owl-page:hover span,
+.recent_posts_widget > li img:hover,
+.buddypress_tabber_widget_member li img:hover,
+#footer-style-1 .social-icons span a:hover,
+#footer-style-2 .social-icons span a:hover,
+#footer-style-3 .social-icons span a:hover,
+.footer_post li img:hover,
+#tabbed_widget .recent_posts_widget img:hover,
+.pricing_detail:hover,
+.pricing_detail:hover .priceamount,
+.banners li:hover .img-thumbnail,
+.ch-info .ch-info-back,
+.service-with-image:hover .service-title,
+.calloutbox-full-mini,
+.services_vertical .icon-container,
+#services .owl-controls .owl-page span,
+.item:hover .icon-container,
+.white-wrapper #owl-testimonial .owl-controls .owl-page.active span,
+.make-bg,
+.buddy_image img:hover,
+.calloutbox,
+#owl-testimonial-widget .owl-controls .owl-prev:hover, 
+#owl-testimonial-widget .owl-controls .owl-next:hover,
+#owl_blog_two_line .owl-controls .owl-prev:hover,
+#owl_blog_two_line .owl-controls .owl-next:hover,
+#owl_blog_three_line .owl-controls .owl-prev:hover,
+#owl_blog_three_line .owl-controls .owl-next:hover,
+#owl_portfolio_two_line .owl-controls .owl-prev:hover,
+#owl_portfolio_two_line .owl-controls .owl-next:hover,
+#owl_shop_carousel .owl-controls .owl-prev:hover, 
+#owl_shop_carousel .owl-controls .owl-next:hover,
+#owl_shop_carousel_1 .owl-controls .owl-prev:hover,
+#owl_shop_carousel_1 .owl-controls .owl-next:hover,
+#owl-blog .owl-controls .owl-prev:hover, 
+#owl-blog .owl-controls .owl-next:hover,
+.overlay #owl-testimonial .owl-controls .owl-page.active span,
+.progress-bar,
+.dmtop,
+.magnifier .btn-default:hover,
+.magnifier .btn-default:focus,
+.magnifier .btn-default:active,
+.rsDefaultInv .rsBullet.rsNavSelected span,
+.service-icon-circle.active,
+.servicebox:hover .service-icon-circle,
+#accordion-first .accordion-heading .accordion-toggle.active em,
+#accordion-second .accordion-heading .accordion-toggle.active em,.btn-primary,
+.pager li > a, .pager li > span,
+.make-bg-full,.make-bg-full-header,
+.make-bg-full-header-2,
+.pagination > .active > a, 
+.pagination > .active > span, 
+.pagination > .active > a:hover, 
+.pagination > .active > span:hover, 
+.pagination > .active > a:focus, 
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus,
+.pagination > .active > span:focus,
+#bbpress-forums li.bbp-body ul.forum li.bbp-forum-reply-count:hover,
+#bbpress-forums li.bbp-body ul.forum li.bbp-forum-topic-count:hover,
+.tagcloud a:hover,
+.buddy_members img:hover,
+.buddy_carousel img:hover,
+#buddypress_features .nav-tabs > li > a:hover,
+#buddypress_features .nav-tabs > li > a:focus,
+#header-default .navbar-nav > li > a:hover,
+#header-default .navbar-nav > li > a:focus,
+#header-default .navbar-nav > li > a:active,
+#header-default .navbar-default .navbar-nav > .open > a,
+#header-default .navbar-default .navbar-nav > .open > a:hover,
+#header-default .navbar-default .navbar-nav > .open > a:focus,
+#header-style-2 .navbar-nav > li > a:hover,
+#header-style-2 .navbar-nav > li > a:focus,
+#header-style-2 .navbar-nav > li > a:active,
+#header-style-2 .navbar-default .navbar-nav > .open > a,
+#header-style-2 .navbar-default .navbar-nav > .open > a:hover,
+#header-style-2 .navbar-default .navbar-nav > .open > a:focus,
+#topbar .social-icons span a:hover,#topbar .topmenu span a:hover,.active-nav,
+#header-default .dropdown-menu,
+#header-default .yamm .dropdown.yamm-fw .dropdown-menu,
+.home-services,
+.timeline-badge.danger,
+.flex-control-paging li a.flex-active,
+.tparrows:hover,
+.flex-direction-nav a,
+.rsUni .rsThumb.rsNavSelected .thumbIco,
+.custom-overlay,
+.side-panel-sec > a,
+.bonfire-slideout-close:hover,
+.post-type-icon,.post-type-icon-small,.post-type-icon-color{
+	background-color:#ce2424;
+}
+
+
+.tp-bullets.simplebullets .bullet:hover,
+.tp-bullets.simplebullets .bullet.selected{
+	border-color:#ce2424 !important;	
+}
+	
+.flex-direction-nav a,
+.rsUni .rsThumb.rsNavSelected .thumbIco,
+.custom-overlay {
+	background-color:rgba(247,194,33,0.7);
+}
+
+.pagination > .active > a, 
+.pagination > .active > span, 
+.pagination > .active > a:hover, 
+.pagination > .active > span:hover, 
+.pagination > .active > a:focus, 
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus,
+.pagination > .active > span:focus,
+.big_title_onepage,
+.tp-caption .btn,
+.small_thin_grey1,
+.service-with-image:hover .service-title a,
+.overlay h2,
+.overlay .lead,
+.overlay .testimonial-widget .testimonial .lead:after,
+.overlay .testimonial-widget .testimonial .lead:before,
+.overlay .testimonial-widget,
+.magnifier .btn-default:hover,
+.magnifier .btn-default:focus,
+.magnifier .btn-default:active,
+.service-icon-circle.active i,
+.servicebox:hover .service-icon-circle i,
+.testimonial h3{
+	color:#efefef !important;
+}
+
+.item:hover .icon-container{
+	background-color: #ce2424;
+	-moz-transform: scale(1);
+	-webkit-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	-moz-transition-duration: 0.8s;
+	-webkit-transition-duration: 0.8s;
+	-ms-transition-duration: 0.8s;
+	-o-transition-duration: 0.8s;
+	transition-duration: 0.8s ;
+}
+
+.portfolio-filter li a.active {
+    background-color: #ce2424;
+    border: 1px solid #ce2424;
+}
+
+#triangle-up:hover {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 50px solid #ce2424;
+	margin-right:auto;
+	margin-left:auto;
+	-webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+    transition: all 300ms linear;
+}
+
+#triangle-topright-color {
+    width: 0;
+    height: 0;
+	float:right;
+	border-top: 60px solid #ce2424;
+    border-left: 105px solid transparent;
+}
+
+#triangle-topleft-color {
+    width: 0;
+    height: 0;
+	float:left;
+    border-top: 60px solid #ce2424;
+    border-right: 105px solid transparent;
+	
+}
+
+#square-color {
+	clear: both;
+	width: 100%;
+	background-color:#ce2424;
+}
+
+.align-color div {
+    float: left;
+}
+
+.direction-l .flag:before,
+.direction-r .flag:before {
+	  position: absolute;
+	  top: 50%;
+	  right: -32px;
+	  content: ' ';
+	  display: block;
+	  width: 18px;
+	  height: 18px;
+	  margin-top: -10px;
+	  background: #fff;
+	  border-radius: 10px;
+	  border: 4px solid #ce2424;
+	  z-index: 10;
+}
+
+#footer-style-1 .social-icons span a:hover,
+#footer-style-1 .widget,
+#footer-style-1 p,
+#footer-style-1 .widget .title h3 {
+	color:#c6c4c4 !important;
+}
