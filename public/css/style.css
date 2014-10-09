@@ -2,8 +2,7 @@
 
 	File Name: style.css
 	Template Name: Ancillia
-	Created By: Willy Wize
-	http://themeforest.net/user/willywize
+	DEV: IRStrat;
 	
 	1) SKELETON
 	2) TOPBAR & HEADER
@@ -290,9 +289,9 @@ section::after {
 }
 .padding-top {
 	padding-top: 26px;
-	padding-right: 0;
-	padding-bottom: 10px;
-	padding-left: 0;
+	padding-right: 10px;
+	padding-bottom: 15px;
+	padding-left: 15px;
 }
 
 .margin-top {
@@ -385,7 +384,7 @@ section::after {
 
 .white-wrapper {
 	background-color:#ffffff;
-	padding:60px 0;
+	padding:2px 0;
 }
 
 .bg-wrapper{
@@ -1951,7 +1950,7 @@ div.thumbnails .magnifier .buttons {
 }
 
 .overlay {
-	padding: 60px 0;
+	padding: 25px 0;
 	background-color:rgba(0, 0, 0, 0.7);
 }
 
