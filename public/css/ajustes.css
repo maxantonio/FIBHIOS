@@ -135,7 +135,6 @@ color: #000000;
 
 
 
-
   @media screen and (max-width: 992px) {
       .margin-bottom-15 {
           margin-bottom: 15px
@@ -158,4 +157,19 @@ padding-top: 6px;
 .img-r img{
 margin-right: 15px;
 }
+
+
+
+/*a partir de Ruby*/
+
+ .padding-left-40 {
+     padding-left: 40px;
+ }
+
+ #contenido .check li:before {
+     color: black !important;
+ }
+
+
+
 
