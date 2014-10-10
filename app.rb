@@ -12,6 +12,11 @@ end
 get '/es/directivos' do
     erb :directivos
 end
+get '/es/estructura' do
+    erb :estructura
+end
+
+
 #portafolio
 get '/es/creditos' do
     erb :creditos
