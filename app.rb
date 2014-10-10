@@ -28,6 +28,10 @@ get '/es/operacion' do
     erb :operacion
 end
 
+# Propiedades en detalle
+get '/es/propiedades/antara' do
+    erb :"propiedades/antara"
+end
 
 
 
