@@ -22,6 +22,10 @@ end
 get '/es/creditos' do
     erb :creditos
 end
+
+
+
+
 get '/es/propiedades' do
     erb :propiedades
 end
