@@ -259,7 +259,12 @@
     </div>
    </div>
 <div class="dmtop">Scroll to Top</div>
-           
+
+
+
+<!-- LayerSlider stylesheet -->
+<link rel="stylesheet" href="/layerslider/css/layerslider.css" type="text/css">
+
 <!-- Java Script ================================================== -->
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -281,25 +286,28 @@
 <script type="text/javascript" src="js/TweenMax.min.js"></script>
 <script type="text/javascript" src="js/ScrollToPlugin.min.js"></script>
 
-    <!-- LayerSlider stylesheet -->
-    <link rel="stylesheet" href="/layerslider/css/layerslider.css" type="text/css">
+
     <!-- External libraries: GreenSock -->
-    <script src="/layerslider/js/greensock.js" type="text/javascript"></script>
+    <!--<script src="/layerslider/js/greensock.js" type="text/javascript"></script>-->
+<script type="text/javascript" src="/layerslider/jQuery/jquery-transit-modified.js"></script>
+
+
+
     <!-- LayerSlider script files -->
     <script src="/layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
     <script src="/layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
 
     <!-- Initializing the slider -->
     <script>
-        jQuery("#layerslider").layerSlider({
-            responsive: false,
-            responsiveUnder: 1280,
-            layersContainer: 1280,
-            skin: 'noskin',
-            hoverPrevNext: false,
-            navPrevNext: true,
-            showCircleTimer: true,
-            skinsPath: '../layerslider/skins/'
+        $('#layerslider').layerSlider({
+            skinsPath : '../layerslider/skins/',
+            skin : 'fullwidthdark',
+            thumbnailNavigation : 'hover',
+            hoverPrevNext : true,
+            pauseOnHover : false,
+            touchNav : true,
+            hoverBottomNav : true,
+            responsive : true
         });
     </script>
 
