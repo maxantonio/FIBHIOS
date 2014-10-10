@@ -29,6 +29,9 @@ end
 get '/es/operacion' do
     erb :operacion
 end
+get '/es/distribucion' do
+    erb :distribucion
+end
 
 
 
