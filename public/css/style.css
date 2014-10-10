@@ -3048,9 +3048,34 @@ acronym {
 }
 
 .ck-sq li a {
-	color:#656565;
+	color: #3f8dbf;
+}
+.ck-po li:before {
+	color: #3f8dbf;
+	content: "\f111";
+	font-family: "FontAwesome";
+	font-size: 16px;
+	left: 0;
+	padding-right:5px;
+	position: relative;
+	top: 2px;
 }
 
+.ck-po li {
+	font-size:13px;
+	list-style:none;
+	margin-bottom:4px;
+}
+
+.ck-po {
+	margin-left:0; 
+	padding-left:0
+	color: #3f8dbf;
+}
+
+.ck-po li a {
+	color:#656565;
+}
 #services .item {
 	padding:15px;
 }
