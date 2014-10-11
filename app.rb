@@ -18,10 +18,11 @@ get '/es/estructura' do
 end
 
 
-#portafolio
+
 get '/es/creditos' do
     erb :creditos
 end
+
 
 get '/es/propiedades' do
     erb :propiedades
@@ -30,16 +31,16 @@ end
 get '/es/operacion' do
     erb :operacion
 end
+
 get '/es/distribucion' do
     erb :distribucion
 end
 
-
-
-
-get '/es/perfilb' do
-  erb :perfilb
+get '/es/contacto' do
+    erb :contacto
 end
+
+
 
 
 
@@ -85,4 +86,5 @@ end
 get '/es/inversionistas/perfil' do
     erb :"inversionistas/ri-perfil"
 end
+
 
