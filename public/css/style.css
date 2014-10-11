@@ -6276,7 +6276,7 @@ ul.timeline > li > .timeline-panel:after {
   float: left;
   width: 25%;
   padding: 20px 3px;
-  border-right: 1px solid #276c98;
+  border-right: 1px solid #1C3046;
   text-align: center;
   cursor: pointer;
   overflow: hidden;
@@ -6287,7 +6287,7 @@ ul.timeline > li > .timeline-panel:after {
 }
 
 .home-services li:first-child {
-  border-left: 1px solid #276c98;
+  border-left: 1px solid #1C3046;
 }
 
 @media (max-width: 767px) {
