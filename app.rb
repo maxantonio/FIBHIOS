@@ -40,6 +40,9 @@ get '/es/contacto' do
     erb :contacto
 end
 
+get '/es/404' do
+  erb :pagina404
+end
 
 
 

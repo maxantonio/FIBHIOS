@@ -39,12 +39,18 @@
       /*line-height:24px;*/
   }
 
-
  .lt-ie9 .navbar-default{
      border: none;
-     
  }
-  
+
+.lt-ie9 #thumb-propiedades li {
+    font-size: 13px !important;
+}
+
+.lt-ie9 .fa-building-o{
+      display: none !important;
+  }
+
   
 
 
@@ -222,6 +228,18 @@ border-left: 105px solid transparent;
     background-image: url("../images/fibhios/contenidos/tw-fibhios2.png");
     background-color: transparent;
 }
+
+  #triangle-up:hover {
+      border-bottom: 30px solid #3F8DBF;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      height: 0;
+      margin-left: auto;
+      margin-right: auto;
+      transition: all 300ms linear 0s;
+      width: 0;
+  }
+
 
 
 
