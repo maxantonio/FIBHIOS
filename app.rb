@@ -81,6 +81,10 @@ get '/es/propiedades/universidad' do
   erb :"propiedades/universidad"
 end
 
+#inversionistas
 
+get '/es/inversionistas/perfil' do
+    erb :"inversionistas/ri-perfil"
+end
 
 
