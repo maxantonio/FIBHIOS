@@ -23,9 +23,6 @@ get '/es/creditos' do
     erb :creditos
 end
 
-
-
-
 get '/es/propiedades' do
     erb :propiedades
 end
@@ -83,6 +80,9 @@ get '/es/propiedades/universidad' do
   erb :"propiedades/universidad"
 end
 
+#inversionistas
 
-
+get '/es/inversionistas/perfil' do
+    erb :"inversionistas/ri-perfil"
+end
 
