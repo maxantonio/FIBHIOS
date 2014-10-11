@@ -1,10 +1,18 @@
                                             /*Compatibilidad con IE8*/
 
-/*fondo negro en 1er parallax*/
-.lt-ie9 section#parallax {
+/*fondo azul en el parallax de la portada*/
+.lt-ie9 section.parallax {
     background-image: none !important;
-    background-color: black !important;
+    background-color: #000000 !important;
 }
+
+
+   /*fondo negro en el parallax de contenido*/
+.lt-ie9 section.parallax {
+    background-image: none !important;
+    background-color: #090A0A !important;
+}
+
 
 /*hover en cuadrados*/
 .lt-ie9 .magnifier {
@@ -15,14 +23,30 @@
     filter: Alpha(FinishOpacity=0);
 }
 
-/*flecha en slider*/
-.lt-ie9 .tp-leftarrow {
-    background-image: none;
+.lt-ie9 p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height:24px;
 }
 
-.lt-ie9 .tp-rightarrow {
-    background-image: none;
-}
+.lt-ie9 strong {
+      font-size: 14px;
+      /*line-height:24px;*/
+  }
+
+ .lt-ie9 li {
+      font-size: 14px;
+      /*line-height:24px;*/
+  }
+
+
+ .lt-ie9 .navbar-default{
+     border: none;
+     
+ }
+  
+  
+
 
 /*FIN Compatibilidad con IE8 */
 
@@ -48,6 +72,8 @@
 p, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: Raleway !important;
 }
+
+
 
 .cont-page-title {
     color: #222222;
@@ -160,19 +186,29 @@ margin-right: 15px;
 
 
 
-/*a partir de Ruby*/
+                                                /*a partir de Ruby*/
 
  .padding-left-40 {
      padding-left: 40px;
  }
 
+ /*colo de flechiatd e viñeta*/
  #contenido .check li:before {
      color: black !important;
  }
 
-
+/*background de twiteer*/
 .calloutbox-full-mini {
     background-image: url("../images/fibhios/TWITTER FEED.png");
     background-color: transparent;
 }
 
+
+
+ @media screen and (min-width: 1200px) {
+     /*para centrar el boton de prospectos*/
+     .btn.pull-right.btn-primary.btn-lg {
+         position: relative;
+         top: 22px;
+     }
+ }
