@@ -1,310 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <%= erb :"layouts/head" %>
-<body>      
-<div id="preloader">
-	<div class="bubblingG">
-		<span id="bubblingG_1"></span>
-		<span id="bubblingG_2"></span>
-		<span id="bubblingG_3"></span>
-	</div>
- </div> 
+
+<body>
+
+<%= erb :"layouts/preloader" %>
+
 <%= erb :"layouts/topbar" %>
-<!-- end topbar -->
+
 <%= erb :"layouts/header" %>
-<!-- end header -->
-    
-   
-	
-<div class="theme-layout"><!-- for boxed layout style -->
- <section class="wrapper-pgtitle">
-    	<div class="container">
-			<div class="calloutbread">
-            	<h2> Filosofía corporativa</h2>
-                <ul class="breadcrumb">
-                    <li><a href="#">Nosotros</a></li>
-                    <li>Filosofía corporativa</li>
-				</ul>
-            </div><!-- end caaloutbread -->
-		</div><!-- end container -->
-      <!-- slide-up content -->
-      <div id="triangle-up"><a href="#" class="bonfire-slideout-button"><div class="panel-bonfire"><i class="fa fa-chevron-up"></i></div></a></div>
-    </section> 
 
-	<section class="white-wrapper">
-		<div class="container">
-        	<div class="row">
-            	
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="widget">
-                        <h3>Legado</h3>
-                        <p>Ofrecer un atractivo instrumento de inversión a nuestros tenedores, a través de potenciar nuestro plan de negocios con el prestigio, red de contactos y experiencia en el sector financiero e inmobiliario de los miembros de nuestro Comité Técnico, así como del Consejo de Administración y equipo directivo de nuestro Administrador Externo; buscando consolidar una sólida, moderna y rentable opción de financiamiento inmobiliario en México.</p>
-                        <h3>Misión</h3>
-                        <p>Mediante una eficaz y flexible estructura de capital, estructurar y ofrecer financiamientos competitivos, en tasa y plazo, para proyectos viables y destacados de reconocidos desarrolladores de propiedades comerciales premium. Cuidando mediante estrictos controles prudenciales las garantías, destino y uso de los recursos a financiar.</p>
-                        <h3>Visión</h3>
-                        <p>Consolidarnos como una de las opciones preferidas y más competitivas de financiamiento para los desarrolladores de propiedades comerciales y de oficinas premium en México, contribuyendo de esta manera al desarrollo e integración del sector inmobiliario del país, a la par de generar apreciación de capital y distribuciones atractivas que incrementen el patrimonio de nuestros tenedores de certificados, dentro de un marco de responsabilidad social y cuidado del entorno.</p>
 
-                                    
-                        <div class="clearfix"></div>
-                         
-                    </div><!-- end widget -->
-                </div><!-- end col-lg-6 -->
-			</div><!-- end row --><br>
-		</div><!-- end container -->
-	</section><!-- end postwrapper -->
-    
-	<section class="parallax" style="background-image: url('/images/parallax/andaresblur2.jpg');" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
-		<div class="overlay">
-        	<div class="container">
-				<div class="stat f-container">
-					<div class="f-element col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<div class="milestone-counter">
-                            <span class="highlight">9.5%</span>
-                            <div class="milestone-details">Tasa de Interés Promedio Ponderada</div>
-						</div>
-					</div>
-					<div class="f-element col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<div class="milestone-counter">
-                            <span class="highlight">30 años</span>
-                            <div class="milestone-details">Plazo de los Créditos</div>
-						</div>
-					</div>
-					<div class="f-element col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<div class="milestone-counter">
-                            <span class="highlight">58%</span>
-                            <div class="milestone-details">LTV Promedio Ponderado</div>
-						</div>
-					</div>
-					<div class="f-element col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<div class="milestone-counter">
-                            <span class="highlight">1.30x</span>
-                            <div class="milestone-details">Cobertura - NOI</div>
-						</div>
-					</div>
-				</div><!-- stat -->
-            </div><!-- end container -->
-    	</div><!-- end overlay -->
-    </section><!-- end transparent-bg -->
 
-	<section class="white-wrapper jt-shadow">
-    	<div class="container">
-			<div class="calloutbox bggrey">
-            	<div class="post-type-icon">
-                    <i class="icon-picons-paper-2"></i>
-                </div>
-            	<div class="col-lg-10">
-            	<h2>Conozca nuestro prospecto en detalle</h2>
-                <p>Créditos respaldados por inmuebles con una expresión arquitectónica vistosa y diferenciada <br>que les brinda una gran ventaja competitiva,</p>
-                </div>
-                <div class="col-lg-1">
-                <a href="#" class="btn pull-right btn-primary btn-lg"><i class="fa fa-download"></i> Prospecto</a>
-                </div>
-            </div><!-- end messagebox -->
-		</div><!-- end container -->
-    </section><!-- end white-wrapper -->
-    <!--  Twitter line  -->  
-    <%= erb :"layouts/twitter" %> 
-    
-	<%= erb :"layouts/footer" %>
-    <!-- end #footer-style-1 -->    
-    <%= erb :"layouts/copyrights" %>
- </div>
-</div>
-<div class="dmtop">Scroll to Top</div>
+<!--wrapper-->
+<div class="theme-layout">
 
-<!-- SLIDE-UP CONTENT--> 
-<div class="bonfire-slideout-button-triangle-background"></div>
-<div class="bonfire-slideout">
-  <div class="bonfire-slideout-inner">
-    <div class="bonfire-slideout-inner-inner"> 
-      <div class="bonfire-slideout-close"></div>
-      <div class="bonfire-slideout-content container">
-        <div class="thin">
-          <div class="section-title-wrapper">
-            <h3 class="section-title">Our Recomendation</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur sagittis lacus vel augue laoreet rutrum faucibus dolor aucto Integer posuere erat a ante venenatis dapibus posuere velit aliquet</p>
-          </div>
-          <div class="margin-top"></div>
-          <div class="row">
-            <div class="col-sm-4">
-             <div class="widget">
-                	<div class="title">
-                        <h3>Your<span class="font-light"> Channel</span></h3>
-                    </div><!-- end title -->
-					<ul class="recent_posts_widget">
-                        <li>
-                        <a href="#" class="recomend-link"><img src="images/blog/side-post.jpg" alt="" />History and Culture</a><br/>
-                        Learn more about history and culture from arround the world
-                        </li>
-                        <li>
-                        <a href="#" class="recomend-link"><img src="images/blog/side-post.jpg" alt="" />Wild Adventure</a><br/>
-                        Free yourself from work and take a wild experience to the center of earth
-                        </li>
-                        <li>
-                       <a href="#" class="recomend-link"><img src="images/blog/side-post.jpg" alt="" />Sains and Technology</a><br/>
-                        Find out what the latest issue about science and technology
-                        </li>
-                        <li>
-                        <a href="#" class="recomend-link"><img src="images/blog/side-post.jpg" alt="" />Urbanesia</a><br/>
-                        Keep update about trend, entertainment, and lifestyle for your reference
-                        </li>
-					</ul><!-- recent posts -->  
-                </div><!-- end widget -->
-            </div>
-            
-             <div class="col-sm-4">
-             <div class="widget">
-                	<div class="title">
-                        <h3>What's <span class="font-light">Hot</span></h3>
-                    </div><!-- end title -->
-					<ul class="recent_posts_widget">
-                        <li>
-                        <a href="#" class="recomend-link"><img src="images/blog/side-post.jpg" alt="" />Gateway To Touch The Blue Sky</a><br/>
-                        June 15, 2014
-                           <div class="rating">
-                            	<i class="fa fa-circle"></i>
-                                <i class="fa fa-circle"></i>
-                                <i class="fa fa-circle"></i>
-                                <i class="fa fa-circle"></i>
-                                <i class="fa fa-circle-o"></i>
-                            </div><!-- rating -->
-                        </li>
-                        <li>
-                            <a href="#" class="recomend-link"><img src="images/blog/side-post.jpg" alt="" />Summer Vocation With Nature</a><br/>
-                            June 15, 2014
-                           <div class="rating">
-                            	<i class="fa fa-circle"></i>
-                                <i class="fa fa-circle"></i>
-                                <i class="fa fa-circle"></i>
-                                <i class="fa fa-circle"></i>
-                                <i class="fa fa-circle"></i>
-                            </div><!-- rating -->
-                        </li>
-                        <li>
-                       <a href="#" class="recomend-link"><img src="images/blog/side-post.jpg" alt="" />Forever Young And Unstopable</a><br/>
-                        June 15, 2014
-                           <div class="rating">
-                            	<i class="fa fa-circle"></i>
-                                <i class="fa fa-circle"></i>
-                                <i class="fa fa-circle"></i>
-                                <i class="fa fa-circle"></i>
-                                <i class="fa fa-circle-o"></i>
-                            </div><!-- rating -->
-                        </li>
-                        <li>
-                            <a href="#" class="recomend-link"><img src="images/blog/side-post.jpg" alt="" />Something Good Work</a><br/>
-                            June 15, 2014
-                           <div class="rating">
-                            	<i class="fa fa-circle"></i>
-                                <i class="fa fa-circle"></i>
-                                <i class="fa fa-circle"></i>
-                                <i class="fa fa-circle"></i>
-                                <i class="fa fa-circle"></i>
-                            </div><!-- rating -->
-                        </li>
-					</ul><!-- recent posts -->  
-                </div><!-- end widget -->
-            </div>
-            
-             <div class="col-sm-4">
-             <div class="widget">
-                	<div class="title">
-                    	<h3>Best <span class="font-light">Offer</span></h3>
-                    </div><!-- end title -->
-					<ul class="recent_posts_widget">
-                        <li>
-                        <a href="#" class="recomend-link"><img src="images/shop/shop.jpg" alt="" />Hot Product One</a>
-                           <div class="rating">
-                            	<i class="fa fa-circle"></i>
-                            	<i class="fa fa-circle"></i>
-                            	<i class="fa fa-circle"></i>
-                            	<i class="fa fa-circle"></i>
-                            	<i class="fa fa-circle-o"></i>
-                            </div><!-- rating -->
-                        	$150.00
-                        </li>
-                        <li>
-                        <a href="#" class="recomend-link"><img src="images/shop/shop.jpg" alt="" />Hot Product Two</a>
-                           <div class="rating">
-                            	<i class="fa fa-circle"></i>
-                            	<i class="fa fa-circle"></i>
-                            	<i class="fa fa-circle"></i>
-                            	<i class="fa fa-circle"></i>
-                            	<i class="fa fa-circle"></i>
-                            </div><!-- rating -->
-                        	$150.00
-                        </li>    
-                        <li>
-                        <a href="#" class="recomend-link"><img src="images/shop/shop.jpg" alt="" />Hot Product Three</a>
-                           <div class="rating">
-                            	<i class="fa fa-circle"></i>
-                            	<i class="fa fa-circle"></i>
-                            	<i class="fa fa-circle"></i>
-                            	<i class="fa fa-circle"></i>
-                            	<i class="fa fa-circle-o"></i>
-                            </div><!-- rating -->
-                        	$150.00
-                        </li>
-                        <li>
-                        <a href="#" class="recomend-link"><img src="images/shop/shop.jpg" alt="" />Hot Product Four</a>
-                           <div class="rating">
-                            	<i class="fa fa-circle"></i>
-                            	<i class="fa fa-circle"></i>
-                            	<i class="fa fa-circle"></i>
-                            	<i class="fa fa-circle"></i>
-                            	<i class="fa fa-circle-o"></i>
-                            </div><!-- rating -->
-                        	$150.00
-                        </li>
-					</ul><!-- recent posts -->  
-                </div><!-- end widget -->
-            </div>
-          </div>
-         </div>
-      </div>
+
+  <!--Breadcump-->
+  <section class="wrapper-pgtitle">
+    <div class="container">
+      <div class="calloutbread">
+        <h2> Filosofía corporativa</h2>
+        <ul class="breadcrumb">
+          <li><a href="#">Nosotros</a></li>
+          <li>Filosofía corporativa a</li>
+        </ul>
+      </div><!-- end caaloutbread -->
     </div>
-  </div>
-</div>
-<!-- /SLIDE-UP CONTENT--> 
-    
-    
- 
-        
-<!-- Java Script ================================================== --> 
-<script type="text/javascript" src="/js/jquery.js"></script>
-<script type="text/javascript" src="/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="/js/menu.js"></script>
-<script type="text/javascript" src="/js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="/js/jquery.parallax-1.1.3.js"></script>
-<script type="text/javascript" src="/js/jquery.simple-text-rotator.js"></script>
-<script type="text/javascript" src="/js/wow.min.js"></script>
-<script type="text/javascript" src="/js/custom.js"></script>
 
-<script type="text/javascript" src="/js/jquery.isotope.min.js"></script>
-<script type="text/javascript" src="/js/custom-portfolio-masonry.js"></script>
-<script type="text/javascript" src="/js/jquery.prettyPhoto.js"></script>
-<script type="text/javascript" src="/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
-<script type="text/javascript" src="/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-<script type="text/javascript" src="/royalslider/jquery.easing-1.3.js"></script>
-<script type="text/javascript" src="/royalslider/jquery.royalslider.min.js"></script>
-<script type="text/javascript" src="/js/smoothPageScroll.js"></script>
-<script type="text/javascript" src="/js/TweenMax.min.js"></script>
-<script type="text/javascript" src="/js/ScrollToPlugin.min.js"></script>
-<script type="text/javascript" src="/js/canvas.js"></script>
-  
-<script type="text/javascript">
-	(function($) {
-	  "use strict";
-			$("#header-default").affix({
-			offset: {
-			  top: 100, 
-			  bottom: function () {
-			  return (this.bottom = $('#copyrights').outerHeight(true))
-			  }
-			}
-		})
-	})(jQuery);
-</script>
+
+    <div id="triangle-up"><a href="#" class="bonfire-slideout-button">
+      <div class="panel-bonfire"><i class="fa fa-chevron-up"></i></div>
+    </a></div>
+  </section>
+  <!--Breadcump END-->
+
+
+  <!--Contenido -->
+  <section id="contenido" class="white-wrapper">
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="widget">
+            <h3>Legado</h3>
+            <p>Ofrecer un atractivo instrumento de inversión a nuestros tenedores, a través de potenciar nuestro plan de negocios con el prestigio, red de contactos y experiencia en el sector financiero e inmobiliario de los miembros de nuestro Comité Técnico, así como del Consejo de Administración y equipo directivo de nuestro Administrador Externo; buscando consolidar una sólida, moderna y rentable opción de financiamiento inmobiliario en México.</p>
+            <h3>Misión</h3>
+            <p>Mediante una eficaz y flexible estructura de capital, estructurar y ofrecer financiamientos competitivos, en tasa y plazo, para proyectos viables y destacados de reconocidos desarrolladores de propiedades comerciales premium. Cuidando mediante estrictos controles prudenciales las garantías, destino y uso de los recursos a financiar.</p>
+            <h3>Visión</h3>
+            <p>Consolidarnos como una de las opciones preferidas y más competitivas de financiamiento para los desarrolladores de propiedades comerciales y de oficinas premium en México, contribuyendo de esta manera al desarrollo e integración del sector inmobiliario del país, a la par de generar apreciación de capital y distribuciones atractivas que incrementen el patrimonio de nuestros tenedores de certificados, dentro de un marco de responsabilidad social y cuidado del entorno.</p>
+
+
+            <div class="clearfix"></div>
+
+          </div><!-- end widget -->
+        </div><!-- end col-lg-6 -->
+      </div><!-- end row --><br>
+    </div><!-- end container -->
+
+
+
+  </section>
+
+  <!--Contenido END -->
+
+
+
+  <%= erb :"layouts/numeros-destacados" %>
+
+  <% erb :"layouts/prospecto" %>
+
+  <%= erb :"layouts/twitter" %>
+
+  <%= erb :"layouts/footer" %>
+
+  <%= erb :"layouts/copyrights" %>
+
+</div>
+
+<!--CONTENT END-->
+
+
+<!--Flechita de scroll-->
+<%= erb :"layouts/scroll-to-top" %>
+
+
+<!--Javascripts-->
+<%= erb :"layouts/js-contenidos" %>
 
 
 </body>
