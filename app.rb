@@ -89,5 +89,8 @@ end
 get '/es/inversionistas/perfil' do
     erb :"inversionistas/ri-perfil"
 end
+get '/es/inversionistas/marco-economico' do
+    erb :"inversionistas/ri-marco"
+end
 
 

@@ -194,6 +194,10 @@ margin-right: 15px;
   background-color: #18406F;
 }
 
+.home-services a{
+  color: #fff
+}
+
 #triangle-topleft-color {
 width: 0;
 height: 0;
@@ -250,3 +254,42 @@ border-left: 105px solid transparent;
          top: 22px;
      }
  }
+
+/*Main Icons
+*/.service-icon i {
+font-size: 50px;
+}
+
+/*sidebar*/
+.panel-default > .panel-heading {
+background-color: #FFFFFF;
+padding: 8px 20px;
+border: 1px solid #A9A9A9;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+}
+
+.chevron {
+padding: 8px 20px;
+border: 1px solid #A9A9A9;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+}
+
+.panel-body-ri {
+padding-top: 7px;
+}
+
+/*parallax*/
+.highlight-text {
+color: #ffffff;
+padding: 20px 0;
+font-weight: bold;
+display: block;
+overflow: hidden;
+margin-bottom: 0;
+font-size: 35px;
+line-height: 37px;
+}

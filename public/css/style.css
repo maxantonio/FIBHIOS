@@ -753,7 +753,7 @@ section::after {
 	padding: 40px 0;
 	display: block;
 	position: relative;
-	background-image: url(../images/dark-map.jpg);
+/*	background-image: url(../images/dark-map.jpg);*/
 	background-repeat: no-repeat;
 	background-position: center;
 }
