@@ -158,6 +158,26 @@ padding-top: 6px;
 margin-right: 15px;
 }
 
+.home-services {
+  background-color: #18406F;
+}
+
+#triangle-topleft-color {
+width: 0;
+height: 0;
+float: left;
+border-top: 60px solid #18406F;
+border-right: 105px solid transparent;
+}
+#triangle-topright-color{
+width: 0;
+height: 0;
+float: right;
+border-top: 60px solid #18406F;
+border-left: 105px solid transparent;
+}
+}
+
 
 
 /*a partir de Ruby*/

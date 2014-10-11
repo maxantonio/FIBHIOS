@@ -4738,7 +4738,7 @@ acronym {
 }
 
 .home-services li p {
-  margin: 10px 0 0;
+  margin: 1px 0 0;
   text-transform: uppercase;
 }
 
@@ -6272,6 +6272,7 @@ ul.timeline > li > .timeline-panel:after {
 }
 
 .home-services li {
+  font-size:  20px;
   float: left;
   width: 25%;
   padding: 20px 3px;
