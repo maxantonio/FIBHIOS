@@ -162,6 +162,10 @@ margin-right: 15px;
   background-color: #18406F;
 }
 
+.home-services a{
+  color: #fff
+}
+
 #triangle-topleft-color {
 width: 0;
 height: 0;
