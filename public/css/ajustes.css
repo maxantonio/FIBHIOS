@@ -255,6 +255,27 @@ border-left: 105px solid transparent;
      }
  }
 
+
+@media screen and (min-width: 900px) and (max-width: 1200px){
+    .operario-font-size {
+        font-size: 25px !important;
+    }
+
+}
+
+@media screen and (max-width: 990px) {
+
+  #offcanvas .col-md-3 {
+      margin: 15px 10px;
+    }
+
+
+
+}
+
+
+
+
 /*Main Icons
 */.service-icon i {
 font-size: 50px;
@@ -293,3 +314,52 @@ margin-bottom: 0;
 font-size: 35px;
 line-height: 37px;
 }
+
+ .button-no-relative {
+     position: relative;
+     top: 0px !important;
+ }
+
+
+/*para  off canvas page*/
+ .big-white {
+     color: white;
+     font-size: 40px;
+     font-weight: bold;
+ }
+
+.txt-cajita {
+    color: #38AFFF;
+    font-weight: bold;
+    margin: auto;
+    max-width: 200px;
+}
+
+ .cajita1-num-esp {
+     background-color: #233542;
+     margin-top: 20px;
+     min-height: 60px;
+  }
+
+  .first-txt-cajita {
+      padding-top: 5px;
+      margin-bottom: 0px;
+  }
+
+ .operario-font-size {
+     font-size: 31px;
+ }
+
+
+  .cajita-subtitle-esp {
+      background-color: #233542;
+      margin-top: 20px;
+      min-height: 70px;
+      padding: 10px 0;
+      min-height: 113px;
+
+  }
+
+ .litte-white {
+     font-size: 30px;
+ }
