@@ -128,6 +128,19 @@ get '/es/inversionistas/administrador' do
     @ri_menu = 3
     erb :"inversionistas/ri-administrador"
 end
+#Informacion bursatil
+get '/es/inversionistas/tenedores' do
+    @ri_menu = 4
+    erb :"inversionistas/ri-tenedores"
+end
+get '/es/inversionistas/distribuciones' do
+    @ri_menu = 4
+    erb :"inversionistas/ri-distribuciones"
+end
+get '/es/inversionistas/glosario' do
+    @ri_menu = 4
+    erb :"inversionistas/ri-glosario"
+end
 
 #globales
 not_found do
