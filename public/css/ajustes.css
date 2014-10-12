@@ -51,7 +51,10 @@
       display: none !important;
   }
 
-  
+ .lt-ie9  .litte-white {
+     font-size: 80% !important;
+ }
+
 
 
 /*FIN Compatibilidad con IE8 */
@@ -368,4 +371,16 @@ line-height: 37px;
 #map {
 height: 300px;
 width: 100%;
+}
+
+
+th{
+    background-color: #3F8DBF;
+    color: white;
+}
+
+#comit-tecn-table th{
+  background-color: #3F8DBF;
+  color: white;
+  font-size: 18px;
 }
