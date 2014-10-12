@@ -93,4 +93,11 @@ get '/es/inversionistas/marco-economico' do
     erb :"inversionistas/ri-marco"
 end
 
+get '/es/inversionistas/perfil' do
+    erb :"inversionistas/ri-perfil"
+end
+get '/es/inversionistas/directivos' do
+    erb :"inversionistas/ri-directivos"
+end
+
 
