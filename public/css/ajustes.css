@@ -293,3 +293,9 @@ margin-bottom: 0;
 font-size: 35px;
 line-height: 37px;
 }
+
+/*Mapa */
+#map {
+height: 300px;
+width: 100%;
+}

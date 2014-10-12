@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<%= erb :"layouts/head" %>
+
+<body>
+
+<%= erb :"layouts/preloader" %>
+
+<%= erb :"layouts/topbar" %>
+
+<%= erb :"layouts/header" %>
+
+<!--wrapper-->
+<div class="theme-layout">
+
+
+  <!--Breadcump-->
+  <section class="wrapper-pgtitle">
+    <div class="container">
+      <div class="calloutbread">
+
+        <h2>Modelo de negocio</h2>
+
+        <ul class="breadcrumb">
+
+          <li><a href="#">Inversionistas</a></li>
+
+          <li>Estrategia</li>
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div id="triangle-up"><a href="#" class="bonfire-slideout-button">
+      <div class="panel-bonfire"><i class="fa fa-chevron-up"></i></div>
+    </a></div>
+  </section>
+  <!--Breadcump END-->
+
+
+  <!--Contenido -->
+  <section id="contenido" class="white-wrapper">
+    <div class="container">
+          <div class="row">
+              <br>
+                <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                  <h3 class="text-center">Fideicomiso de Administración, Garantía y Fuente de Pago </h3>
+                  <img src="/images/fibhios/contenidos/modelo.jpg" class="img-responsive center-block">
+                  <p>Mediante la consolidación de una estructura óptima de capital y gobierno corporativo, invertimos nuestros recursos en un portafolio de créditos garantizado por garantías hipotecarias y/o fiduciarias de propiedades premium, oficinas y centros comerciales. Los créditos que componen nuestro portafolio se destinan mayormente para desarrollo o refinanciamiento de proyectos inmobiliarios.</p>
+                  <p>Los esfuerzos de FIBHIOS se concentran en maximizar los flujos de efectivo provenientes de su portafolio de créditos, el siguiente cuadro muestra una esquematización de la estrategia de originación:
+                  </p>
+                  <div class="row">
+                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+                      <table class="display table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                          <th>
+                          Estrategias 
+                        </th>
+
+                        </tr>
+                      </thead>
+                        <tbody>
+                          <tr>
+                            <td>• Propiedades premium, mayormente estabilizadas</td>
+                          </tr>
+                           <tr>
+                            <td>• Concentración en el sector de centros comerciales y oficinas</td>
+                          </tr>
+                          <tr>
+                            <td>• Inversión en desarrolladores probados (95%-100% ocupación)</td>
+                          </tr>
+                          <tr>
+                            <td>• Estrictos controles prudenciales</td>
+                          </tr>
+                           <tr>
+                            <td>• Diversificación geográfica y en locatarios</td>
+                          </tr>
+                        </tbody>
+                        </table> 
+                     </div>
+                       <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                      <table class="display table table-bordered table-striped">
+                        <thead>
+                        <tr><th>Parámetros</th></tr>
+                      </thead>
+                        <tbody>
+                          <tr>
+                            <td>• Tasa ponderada: 9.5%</td>
+                          </tr>
+                           <tr>
+                            <td>• Plazo: 30 años</td>
+                          </tr>
+                          <tr>
+                            <td>• LTV promedio: 58%</td>
+                          </tr>
+                          <tr>
+                            <td>• Cobertura NOI:1.30x</td>
+                          </tr>
+                           <tr>
+                            <td>• Moneda: 100% MXN</td>
+                          </tr>
+                        </tbody>
+                        </table> 
+                     </div>
+                    
+                    </div>                       
+                </div>
+                <!-- Menu complementario en 3md -->
+               <%= erb :"layouts/ri-sidebar" %>
+               
+              
+           </div> <!-- end row -->
+             <div class="clearfix"></div>
+     </div>
+  </section>
+
+  <!--Contenido END -->
+
+
+
+  <%= erb :"layouts/parallax-mensaje1" %>
+
+  <%= erb :"layouts/prospecto" %>
+
+  <%= erb :"layouts/twitter" %>
+
+  <%= erb :"layouts/footer" %>
+
+  <%= erb :"layouts/copyrights" %>
+
+</div>
+
+<!--CONTENT END-->
+<!--Pagina off canvas-->
+<%= erb :"layouts/off-canvas-page"%>
+
+<!--Flechita de scroll-->
+<%= erb :"layouts/scroll-to-top" %>
+
+
+<!--Javascripts-->
+<%= erb :"layouts/js-contenidos" %>
+
+
+</body>
+</html>
