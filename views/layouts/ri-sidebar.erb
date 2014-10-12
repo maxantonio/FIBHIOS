@@ -7,12 +7,12 @@
                           <div class="about_tabbed">     
                                         <div class="panel-group" id="accordion2">
                                             <div class="panel panel-default">
-                                                <div class="panel-heading active">
+                                                <div class="panel-heading <%= "active" if @ri_menu == 1 %>">
                                                     <h4 class="panel-title">
                                                         <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">FIBHIOS</a>
                                                     </h4>
                                                 </div><!-- end panel-heading -->
-                                                <div id="collapseOne" class="panel-collapse collapse in">
+                                                <div id="collapseOne" class="panel-collapse collapse <%= "in" if @ri_menu == 1 %>" >
                                                     <div class="panel-body-ri">
                                                         <ul class="chevron">
                                                               <li><a href="/es/inversionistas/perfil">Perfil</a></li>
@@ -23,33 +23,33 @@
                                                 </div><!-- end collapseOne -->
                                             </div><!-- end panel -->
                                             <div class="panel panel-default">
-                                                <div class="panel-heading">
+                                                <div class="panel-heading <%= "active" if @ri_menu == 2 %>">
                                                     <h4 class="panel-title">
                                                         <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">Estrategia</a>
                                                     </h4>
                                                 </div><!-- end panel-heading -->
-                                                <div id="collapseTwo" class="panel-collapse collapse">
+                                                <div id="collapseTwo" class="panel-collapse collapse <%= "in" if @ri_menu == 2 %>">
                                                     <div class="panel-body-ri">
                                                        <ul class="chevron">
-                                                              <li><a href="#">Estructura de participación</a></li>
-                                                              <li><a href="#">Modelo de negocio</a></li>
-                                                              <li><a href="#">Atractivo de inversión</a></li>
+                                                              <li><a href="/es/inversionistas/estructura">Estructura de participación</a></li>
+                                                              <li><a href="/es/inversionistas/modelo">Modelo de negocio</a></li>
+                                                              <li><a href="/es/inversionistas/atractivo">Atractivo de inversión</a></li>
                                                           </ul>
                                                     </div><!-- end panel-body -->
                                                 </div><!-- end collapseOne -->
                                             </div><!-- end panel -->
                                             <div class="panel panel-default">
-                                                <div class="panel-heading">
+                                                <div class="panel-heading <%= "active" if @ri_menu == 3 %>">
                                                     <h4 class="panel-title">
                                                         <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">Gobierno corporativo</a>
                                                     </h4>
                                                 </div><!-- end panel-heading -->
-                                                <div id="collapseThree" class="panel-collapse collapse">
+                                                <div id="collapseThree" class="panel-collapse collapse <%= "in" if @ri_menu == 3 %>">
                                                     <div class="panel-body-ri">
                                                         <ul class="chevron">
-                                                              <li><a href="#">Compromiso</a></li>
-                                                              <li><a href="#">Comité Técnico</a></li>
-                                                              <li><a href="#">Comités</a></li>
+                                                              <li><a href="/es/inversionistas/compromiso">Compromiso</a></li>
+                                                              <li><a href="/es/inversionistas/comite-tecnico">Comité Técnico</a></li>
+                                                              <li><a href="/es/inversionistas/comites">Comités</a></li>
                                                               <li><a href="#">Nuestro Administrador</a></li>
                                                           </ul>
                                                     </div><!-- end panel-body -->

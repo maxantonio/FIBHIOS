@@ -40,12 +40,6 @@ get '/es/contacto' do
     erb :contacto
 end
 
-get '/es/404' do
-  erb :pagina404
-end
-
-
-
 
 # Propiedades
 get '/es/propiedades/antara' do
@@ -85,19 +79,57 @@ get '/es/propiedades/universidad' do
 end
 
 #inversionistas
-
+##FIBHIOS
 get '/es/inversionistas/perfil' do
+    @ri_menu = 1
     erb :"inversionistas/ri-perfil"
+
 end
 get '/es/inversionistas/marco-economico' do
+    @ri_menu = 1
     erb :"inversionistas/ri-marco"
 end
 
 get '/es/inversionistas/perfil' do
+    @ri_menu = 1
     erb :"inversionistas/ri-perfil"
 end
 get '/es/inversionistas/directivos' do
+    @ri_menu = 1
     erb :"inversionistas/ri-directivos"
 end
+##Estrategia
+get '/es/inversionistas/estructura' do
+    @ri_menu = 2
+    erb :"inversionistas/ri-estructura"
+end
+get '/es/inversionistas/modelo' do
+    @ri_menu = 2
+    erb :"inversionistas/ri-modelo"
+end
+get '/es/inversionistas/atractivo' do
+    @ri_menu = 2
+    erb :"inversionistas/ri-atractivo"
+end
+#Gobierno corporativo 
+get '/es/inversionistas/compromiso' do
+    @ri_menu = 3
+    erb :"inversionistas/ri-compromiso"
+end
+get '/es/inversionistas/comite-tecnico' do
+    @ri_menu = 3
+    erb :"inversionistas/ri-comitetecnico"
+end
+get '/es/inversionistas/comites' do
+    @ri_menu = 3
+    erb :"inversionistas/ri-comites"
+end
 
-
+#globales
+not_found do
+  status 404
+  erb :pagina404
+end
+get '/es/404' do
+  erb :pagina404
+end

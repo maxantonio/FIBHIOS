@@ -72,6 +72,7 @@
             <button type="submit" value="SEND" id="submit" class="btn btn-lg btn-primary pull-right button-no-relative">Enviar  mensaje</button>
           </div>
         </form>
+        <br>
       </div><!-- end contact-form --><br><br>
     </div><!-- end container -->
   </section>
@@ -80,9 +81,10 @@
 
 
 
-  <%= erb :"layouts/numeros-destacados" %>
 
-  <%= erb :"layouts/prospecto" %>
+
+
+  
 
   <%= erb :"layouts/twitter" %>
 
@@ -110,7 +112,107 @@
 
 
 <![endif]-->
+<!-- Map code -->
+  <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
+  <script type="text/javascript">
+(function($) {
+  "use strict";
+    $("#header-default").affix({
+    offset: {
+    top: 100,
+    bottom: function () {
+    return (this.bottom = $('#copyrights').outerHeight(true))
+      }
+    }
+  })
 
+var map;
+var centerPosition = new google.maps.LatLng(19.420628,-99.2184593);
+var style = [{
+  "stylers": [{
+    "visibility": "off"
+  }]
+}, {
+  "featureType": "road",
+    "stylers": [{
+    "visibility": "on"
+  }, {
+    "color": "#ffffff"
+  }]
+}, {
+  "featureType": "road.arterial",
+    "stylers": [{
+    "visibility": "on"
+  }, {
+    "color": "#fee379"
+  }]
+}, {
+  "featureType": "road.highway",
+    "stylers": [{
+    "visibility": "on"
+  }, {
+    "color": "#fee379"
+  }]
+}, {
+  "featureType": "landscape",
+    "stylers": [{
+    "visibility": "on"
+  }, {
+    "color": "#f3f4f4"
+  }]
+}, {
+  "featureType": "water",
+    "stylers": [{
+    "visibility": "on"
+  }, {
+    "color": "#7fc8ed"
+  }]
+}, {}, {
+  "featureType": "road",
+    "elementType": "labels",
+    "stylers": [{
+    "visibility": "on"
+  }]
+}, {
+  "featureType": "poi.park",
+    "elementType": "geometry.fill",
+    "stylers": [{
+    "visibility": "on"
+  }, {
+    "color": "#83cead"
+  }]
+}, {
+  "elementType": "labels",
+    "stylers": [{
+    "visibility": "on"
+  }]
+}, {
+  "featureType": "landscape.man_made",
+    "elementType": "geometry",
+    "stylers": [{
+    "weight": 0.9
+  }, {
+    "visibility": "off"
+  }]
+}]
+
+var options = {
+  zoom: 13,
+  center: centerPosition,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+map = new google.maps.Map($('#map')[0], options);
+map.setOptions({
+  styles: style
+});
+var marker = new google.maps.Marker({
+  position: centerPosition,
+  map: map,
+  icon: image,
+  shadow: shadow
+});
+})(jQuery);
+</script>
 
 </body>
 </html>

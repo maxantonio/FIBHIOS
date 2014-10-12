@@ -363,3 +363,9 @@ line-height: 37px;
  .litte-white {
      font-size: 30px;
  }
+
+/*Mapa */
+#map {
+height: 300px;
+width: 100%;
+}
