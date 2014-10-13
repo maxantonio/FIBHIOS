@@ -135,7 +135,7 @@ get '/es/inversionistas/tenedores' do
 end
 get '/es/inversionistas/distribuciones' do
     @ri_menu = 4
-    erb :"inversionistas/ri-tenedores"
+    erb :"inversionistas/ri-distribuciones"
 end
 get '/es/inversionistas/glosario' do
     @ri_menu = 4
