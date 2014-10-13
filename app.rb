@@ -124,6 +124,10 @@ get '/es/inversionistas/comites' do
     @ri_menu = 3
     erb :"inversionistas/ri-comites"
 end
+get '/es/inversionistas/administrador' do
+    @ri_menu = 3
+    erb :"inversionistas/ri-administrador"
+end
 
 #globales
 not_found do
