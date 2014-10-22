@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<%= erb :"layouts/head" %>
+
+<body>
+
+<%= erb :"layouts/preloader" %>
+
+<%= erb :"layouts/topbar" %>
+
+<%= erb :"layouts/header" %>
+
+
+
+<!--wrapper-->
+<div class="theme-layout">
+
+
+  <!--Breadcump-->
+  <section class="wrapper-pgtitle">
+    <div class="container">
+      <div class="calloutbread">
+
+        <h2>  Luxury Hall </h2>
+
+        <ul class="breadcrumb">
+
+          <li><a href="#"> Portafolio </a></li>
+
+          <li>Propiedades relacionadas</li>
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div id="triangle-up"><a href="#" class="bonfire-slideout-button">
+      <div class="panel-bonfire"><i class="fa fa-chevron-up"></i></div>
+    </a></div>
+  </section>
+  <!--Breadcump END-->
+
+
+  <!--Contenido -->
+  <section id="contenido" class="white-wrapper">
+    <div class="container">
+      <div class="row">
+        <div id="content" class="col-lg-12 col-sm-12 col-md-12 col-xs-12 single-portfolio">
+
+
+          <!--Parte de Imagenes-->
+          <div class="col-sm-4 padding-top">
+            <div class="portfolio_item">
+
+              <!--imagen grande-->
+              <div class="entry">
+                <img src="/images/fibhios/propiedades/LuxuryHall/luxuryhallx380.jpg" alt="" class="img-responsive">
+              </div>
+
+            </div>
+          </div>
+          <!--Parte de Imagenes END-->
+
+
+
+          <!--Parte de Texto-->
+          <div class="col-sm-8 padding-left-40">
+            <div class="product_details">
+
+              <!--titulo-->
+              <h3>Luxury Hall in numbers</h3>
+
+              <!--tablita-->
+              <ul>
+                <li><strong>Opening date:</strong>            2010</li>
+                <li><strong>LA:</strong>                               1.22 msf</li>
+                <li><strong>Privative GPA*: </strong>                     115,174 sf</li>
+                <li><strong>Property manager: </strong>                GSM</li>
+                <li><strong>Visitors per year: </strong>     6.4 million</li>
+              </ul>
+              <p class="legenda">* Leasable Area of the privative creditor unit of the loan (guarantee).</p>
+            </div>
+
+            <!--texto de descripcion-->
+            <p>Luxury Hall is a premium shopping mall located in Puebla, with a Leasable Area (LA) of 1.22 msf, and 100% occupancy. Its architecture is distinguished by its iconic ceiling made of salam wood, and its superior dome. It contains 36 stores and a central area with a restaurant-bar. Luxury Hall was developed in record time, opening to the public in 2010.</p>
+
+
+          </div>
+          <!--Parte de Texto-->
+
+
+          <div class="clearfix"></div>
+
+        </div>
+      </div>
+      <br>
+    </div>
+  </section>
+
+  <!--Contenido END -->
+
+
+
+  <%= erb :"layouts/numeros-destacados" %>
+
+  <%= erb :"layouts/prospecto" %>
+
+  <%= erb :"layouts/twitter" %>
+
+  <%= erb :"layouts/footer" %>
+
+  <%= erb :"layouts/copyrights" %>
+
+</div>
+
+<!--CONTENT END-->
+
+<!--Pagina off canvas-->
+<%= erb :"layouts/off-canvas-page"%>
+
+<!--Flechita de scroll-->
+<%= erb :"layouts/scroll-to-top" %>
+
+
+<!--Javascripts-->
+<%= erb :"layouts/js-contenidos" %>
+
+
+</body>
+</html>
