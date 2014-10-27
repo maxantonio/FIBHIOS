@@ -3078,6 +3078,15 @@ acronym {
 .ck-po li a {
 	color:#656565;
 }
+
+.ck-numbered li {
+	font-size:13px;
+	list-style:decimal;
+	margin-bottom:4px;
+	margin-left: 15px;
+}
+
+
 #services .item {
 	padding:15px;
 }
