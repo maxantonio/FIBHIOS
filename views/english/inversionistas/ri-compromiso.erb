@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<%= erb :"layouts/head" %>
+
+<body>
+
+<%= erb :"layouts/preloader" %>
+
+<%= erb :"layouts/topbar" %>
+
+<%= erb :"layouts/header" %>
+
+<!--wrapper-->
+<div class="theme-layout">
+
+
+  <!--Breadcump-->
+  <section class="wrapper-pgtitle">
+    <div class="container">
+      <div class="calloutbread">
+
+        <h2>Commitment</h2>
+
+        <ul class="breadcrumb">
+
+          <li><a href="#">Investors</a></li>
+
+          <li>Corporate Governance</li>
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div id="triangle-up"><a href="#" class="bonfire-slideout-button">
+      <div class="panel-bonfire"><i class="fa fa-chevron-up"></i></div>
+    </a></div>
+  </section>
+  <!--Breadcump END-->
+
+
+  <!--Contenido -->
+  <section id="contenido" class="white-wrapper">
+    <div class="container">
+          <div class="row">
+              <br>
+                <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+
+                  <p>The main objective and commitment of FIBHIOS is to generate value for its certificate holders, for which a solid corporate governance is seen as instrumental. For this reason, it plans to establish five management committees to enable it to strengthen its business processes in: </p>
+                  <ul class="ck-po">
+                  <li>Compensation, talent attraction and creation</li>
+                  <li>Audit and risk control</li>
+                  <li>Credits quality</li>
+                  <li>Corporate practices</li>
+                  <li>Debt and capital structure</li>
+                  </ul>
+                  <p>The composition of FIBHIOS committees collectively constitutes one of the strongest corporate governance structures in Mexico. This will be reinforced by the parallel structure of our External Manager, FHIPOS, which will have its own Board of Directors and management committees in order to achieve the mandates issued by FIBHIOS’s Technical Committee. In addition to the strong constitution of our management and governance structure, constant monitoring and assessment will be held, oriented to maintain FIBHIOS’s edge in transparency and corporate governance.</p>
+                  <p>FIBHIOS strictly seeks to comply with the law and ethics in all the aspects of its operation. For this reason, it will not participate in any activity against the law, ethics, or environmental sustainability. </p>
+                  <br>
+                </div>
+
+                <!-- Menu complementario en 3md -->
+               <%= erb :"english/layouts/ri-sidebar" %>
+               
+              
+           </div> <!-- end row -->
+             <div class="clearfix"></div>
+     </div>
+  </section>
+
+  <!--Contenido END -->
+
+
+
+  <%= erb :"layouts/parallax-mensaje1" %>
+
+  <%= erb :"layouts/prospecto" %>
+
+  <%= erb :"layouts/twitter" %>
+
+  <%= erb :"layouts/footer" %>
+
+  <%= erb :"layouts/copyrights" %>
+
+</div>
+
+<!--CONTENT END-->
+<!--Pagina off canvas-->
+<%= erb :"layouts/off-canvas-page"%>
+
+<!--Flechita de scroll-->
+<%= erb :"layouts/scroll-to-top" %>
+
+
+<!--Javascripts-->
+<%= erb :"layouts/js-contenidos" %>
+
+
+</body>
+</html>
