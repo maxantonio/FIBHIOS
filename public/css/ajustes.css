@@ -399,3 +399,15 @@ line-height: 60px;
 margin: 48px 20px;
 width: 60px;
 }
+
+
+.services_vertical {
+overflow: hidden;
+padding-right: 0;
+padding-bottom: 1px;
+padding-left: 0;
+}
+
+.overlay {
+padding: 15px 0;
+}
