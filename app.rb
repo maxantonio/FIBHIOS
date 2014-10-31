@@ -4,6 +4,16 @@ get '/' do
   erb :index
 end
 
+get '/es' do
+  erb :index
+end
+
+get '/en' do
+  erb :"english/index"
+end
+
+
+
 #globales
 not_found do
   status 404
