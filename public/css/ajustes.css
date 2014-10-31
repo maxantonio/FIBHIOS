@@ -193,7 +193,7 @@ margin-right: 15px;
 }
 
 .home-services {
-  background-color: #18406F;
+  background-color: #0D2541;
 }
 
 .home-services a{
@@ -204,14 +204,14 @@ margin-right: 15px;
 width: 0;
 height: 0;
 float: left;
-border-top: 60px solid #18406F;
+border-top: 60px solid #0D2541;
 border-right: 105px solid transparent;
 }
 #triangle-topright-color{
 width: 0;
 height: 0;
 float: right;
-border-top: 60px solid #18406F;
+border-top: 60px solid #0D2541;
 border-left: 105px solid transparent;
 }
 
@@ -390,3 +390,24 @@ th{
 
  /*Slider*/
 
+.service_vertical_box .service-icon {
+float: left;
+clear: both;
+display: block;
+height: 60px;
+line-height: 60px;
+margin: 48px 20px;
+width: 60px;
+}
+
+
+.services_vertical {
+overflow: hidden;
+padding-right: 0;
+padding-bottom: 1px;
+padding-left: 0;
+}
+
+.overlay {
+padding: 15px 0;
+}
