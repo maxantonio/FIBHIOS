@@ -8,7 +8,11 @@
             </div><!-- end columns -->
             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                 <div class="topmenu">
-                	<span><a href="#"> English</a></span>
+                	<% if @locale =="es" %>
+                    <span><a href="/en"> English</a></span>
+                    <% else %>
+                    <span><a href="/es"> Español</a></span>
+                    <% end %>
                     
                 </div><!-- end top menu -->
             </div><!-- end columns -->
