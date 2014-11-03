@@ -1,14 +1,25 @@
 require 'sinatra'
+require 'i18n'
+before  '/es/*' do
+@locale= "es"
+end
+before  '/en/*' do
+@locale= "en"
+end
 
 get '/' do
+  @locale = "es"
   erb :index
+  
 end
 
 get '/es' do
+  @locale = "es"
   erb :index
 end
 
 get '/en' do
+  @locale = "en"
   erb :"english/index"
 end
 
@@ -27,44 +38,52 @@ end
 # Nostros
 get '/es/perfil' do
     erb :perfil
+    
 end
 get '/es/filosofia' do
     erb :filosofia
+
 end
 get '/es/directivos' do
     erb :directivos
+
 end
 get '/es/estructura' do
     erb :estructura
+
 end
-
-
 
 get '/es/creditos' do
     erb :creditos
+
 end
 
 
 get '/es/propiedades' do
     erb :propiedades
+
 end
 
 get '/es/operacion' do
     erb :operacion
+
 end
 
 get '/es/distribucion' do
     erb :distribucion
+
 end
 
 get '/es/contacto' do
     erb :contacto
+
 end
 
 
 # Propiedades
 get '/es/propiedades/antara' do
     erb :"propiedades/antara"
+
 end
 
 get '/es/propiedades/andamar-I' do
@@ -105,15 +124,18 @@ get '/es/inversionistas/perfil' do
     @ri_menu = 1
     erb :"inversionistas/ri-perfil"
 
+
 end
 get '/es/inversionistas/marco-economico' do
     @ri_menu = 1
     erb :"inversionistas/ri-marco"
+
 end
 
 get '/es/inversionistas/perfil' do
     @ri_menu = 1
     erb :"inversionistas/ri-perfil"
+
 end
 get '/es/inversionistas/directivos' do
     @ri_menu = 1
@@ -180,8 +202,6 @@ end
 get '/en/estructura' do
   erb :"english/estructura"
 end
-
-
 
 get '/en/creditos' do
   erb :"english/creditos"
