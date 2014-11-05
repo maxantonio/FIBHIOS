@@ -37,9 +37,11 @@ end
 
 # Nostros
 get '/es/perfil' do
-    erb :perfil
-    
+    @title = "Nuestro perfil"
+    @menu = "Nosotros"
+    erb :perfil, :layout => :"layouts/content_layout"    
 end
+
 get '/es/filosofia' do
     erb :filosofia
 
