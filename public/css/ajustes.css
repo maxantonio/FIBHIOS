@@ -326,7 +326,7 @@ line-height: 37px;
 /*para  off canvas page*/
  .big-white {
      color: white;
-     font-size: 30px;
+     font-size: 25px;
      font-weight: bold;
  }
 
@@ -410,4 +410,14 @@ padding-left: 0;
 
 .overlay {
 padding: 15px 0;
+}
+
+/*plus*/
+.panel-bonfire {
+font-size: 22px;
+padding-top: 5px;
+margin-left: -50px;
+margin-right: auto;
+padding-left: 39px;
+color: #3f8dbf;
 }
