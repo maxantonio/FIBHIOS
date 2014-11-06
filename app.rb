@@ -399,8 +399,19 @@ get '/en/inversionistas/glosario' do
   erb :"english/inversionistas/ri-glosario"
 end
 
+# My Helpers
+helpers do
+  def change_language
+     if request.path_info=="/"
+      "/en"
+    elsif @locale =="es"
+      request.path_info.sub('es', 'en')  
+    elsif  @locale =="en"
+      
+      request.path_info.sub('en', 'es') 
+    end
 
-
-
+  end
+end
 
 

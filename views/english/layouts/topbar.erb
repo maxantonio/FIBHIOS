@@ -10,9 +10,9 @@
             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                 <div class="topmenu">
                 	<% if @locale =="es" %>
-                    <span><a href="/en"> English</a></span>
+                    <span><a href="<%= change_language %>">English</a></span>
                     <% else %>
-                    <span><a href="/es"> Español</a></span>
+                    <span><a href="<%= change_language %>">Español</a></span>
                     <% end %>
                     
                 </div><!-- end top menu -->
