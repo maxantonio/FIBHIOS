@@ -66,7 +66,7 @@ get '/es/creditos' do
 
 end
 
-
+# portafolio
 get '/es/propiedades' do
     erb :propiedades
 
@@ -81,7 +81,12 @@ get '/es/distribucion' do
     erb :distribucion
 
 end
+get '/es/numeros' do
+    erb :numeros
 
+end
+
+#contacto
 get '/es/contacto' do
     erb :contacto
 
@@ -254,6 +259,10 @@ end
 
 get '/en/distribucion' do
   erb :"english/distribucion"
+end
+
+get '/en/numeros' do
+  erb :"english/numeros"
 end
 
 get '/en/contacto' do
