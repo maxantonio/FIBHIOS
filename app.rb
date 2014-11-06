@@ -37,18 +37,26 @@ end
 
 # Nostros
 get '/es/perfil' do
-    erb :perfil
-    
+    @title = "Nuestro perfil"
+    @menu = "Nosotros"
+    erb :perfil, :layout => :"layouts/content_layout"    
 end
+
 get '/es/filosofia' do
+    @title = ""
+    @menu = "Nosotros"
     erb :filosofia
 
 end
 get '/es/directivos' do
+    @title = ""
+    @menu = "Nosotros"
     erb :directivos
 
 end
 get '/es/estructura' do
+    @title = ""
+    @menu = "Nosotros"
     erb :estructura
 
 end
@@ -58,7 +66,7 @@ get '/es/creditos' do
 
 end
 
-
+# portafolio
 get '/es/propiedades' do
     erb :propiedades
 
@@ -73,7 +81,12 @@ get '/es/distribucion' do
     erb :distribucion
 
 end
+get '/es/numeros' do
+    erb :numeros
 
+end
+
+#contacto
 get '/es/contacto' do
     erb :contacto
 
@@ -121,66 +134,94 @@ end
 #inversionistas
 ##FIBHIOS
 get '/es/inversionistas/perfil' do
+    @title = ""
+    @menu = "Inversionistas"
     @ri_menu = 1
     erb :"inversionistas/ri-perfil"
 
 
 end
 get '/es/inversionistas/marco-economico' do
+    @title = ""
+    @menu = "Inversionistas"
     @ri_menu = 1
     erb :"inversionistas/ri-marco"
 
 end
 
 get '/es/inversionistas/perfil' do
+    @title = ""
+    @menu = "Inversionistas"
     @ri_menu = 1
     erb :"inversionistas/ri-perfil"
 
 end
 get '/es/inversionistas/directivos' do
+    @title = ""
+    @menu = "Inversionistas"
     @ri_menu = 1
     erb :"inversionistas/ri-directivos"
 end
 ##Estrategia
 get '/es/inversionistas/estructura' do
+    @title = ""
+    @menu = "Inversionistas"
     @ri_menu = 2
     erb :"inversionistas/ri-estructura"
 end
 get '/es/inversionistas/modelo' do
+    @title = ""
+    @menu = "Inversionistas"
     @ri_menu = 2
     erb :"inversionistas/ri-modelo"
 end
 get '/es/inversionistas/atractivo' do
+    @title = ""
+    @menu = "Inversionistas"
     @ri_menu = 2
     erb :"inversionistas/ri-atractivo"
 end
 #Gobierno corporativo 
 get '/es/inversionistas/compromiso' do
+    @title = ""
+    @menu = "Inversionistas"
     @ri_menu = 3
     erb :"inversionistas/ri-compromiso"
 end
 get '/es/inversionistas/comite-tecnico' do
+    @title = ""
+    @menu = "Inversionistas"
     @ri_menu = 3
     erb :"inversionistas/ri-comitetecnico"
 end
 get '/es/inversionistas/comites' do
+    @title = ""
+    @menu = "Inversionistas"
     @ri_menu = 3
     erb :"inversionistas/ri-comites"
 end
 get '/es/inversionistas/administrador' do
+    @title = ""
+    @menu = "Inversionistas"
     @ri_menu = 3
     erb :"inversionistas/ri-administrador"
 end
 #Informacion bursatil
 get '/es/inversionistas/tenedores' do
+    @title = ""
+    @menu = "Inversionistas"
     @ri_menu = 4
     erb :"inversionistas/ri-tenedores"
 end
 get '/es/inversionistas/distribuciones' do
+    @title = ""
+    @menu = "Inversionistas"
     @ri_menu = 4
     erb :"inversionistas/ri-distribuciones"
 end
 get '/es/inversionistas/glosario' do
+    @title = ""
+    @menu = "Inversionistas"
     @ri_menu = 4
     erb :"inversionistas/ri-glosario"
 end
@@ -218,6 +259,10 @@ end
 
 get '/en/distribucion' do
   erb :"english/distribucion"
+end
+
+get '/en/numeros' do
+  erb :"english/numeros"
 end
 
 get '/en/contacto' do
@@ -265,69 +310,108 @@ end
 #inversionistas
 ##FIBHIOS
 get '/en/inversionistas/perfil' do
+  @title = ""
+  @menu = "Inversionistas"
   @ri_menu = 1
   erb :"english/inversionistas/ri-perfil"
 
 end
 get '/en/inversionistas/marco-economico' do
+  @title = ""
+  @menu = "Inversionistas"
   @ri_menu = 1
   erb :"english/inversionistas/ri-marco"
 end
 
 get '/en/inversionistas/perfil' do
+  @title = ""
+  @menu = "Inversionistas"
   @ri_menu = 1
   erb :"english/inversionistas/ri-perfil"
 end
 get '/en/inversionistas/directivos' do
+  @title = ""
+  @menu = "Inversionistas"
   @ri_menu = 1
   erb :"english/inversionistas/ri-directivos"
 end
 ##Estrategia
 get '/en/inversionistas/estructura' do
+  @title = ""
+  @menu = "Inversionistas"
   @ri_menu = 2
   erb :"english/inversionistas/ri-estructura"
 end
 get '/en/inversionistas/modelo' do
+  @title = ""
+  @menu = "Inversionistas"
   @ri_menu = 2
   erb :"english/inversionistas/ri-modelo"
 end
 get '/en/inversionistas/atractivo' do
+  @title = ""
+  @menu = "Inversionistas"
   @ri_menu = 2
   erb :"english/inversionistas/ri-atractivo"
 end
 #Gobierno corporativo
 get '/en/inversionistas/compromiso' do
+  @title = ""
+  @menu = "Inversionistas"
   @ri_menu = 3
   erb :"english/inversionistas/ri-compromiso"
 end
 get '/en/inversionistas/comite-tecnico' do
+  @title = ""
+  @menu = "Inversionistas"
   @ri_menu = 3
   erb :"english/inversionistas/ri-comitetecnico"
 end
 get '/en/inversionistas/comites' do
+  @title = ""
+  @menu = "Inversionistas"
   @ri_menu = 3
   erb :"english/inversionistas/ri-comites"
 end
 get '/en/inversionistas/administrador' do
+  @title = ""
+  @menu = "Inversionistas"
   @ri_menu = 3
   erb :"english/inversionistas/ri-administrador"
 end
 #Informacion bursatil
 get '/en/inversionistas/tenedores' do
+  @title = ""
+  @menu = "Inversionistas"
   @ri_menu = 4
   erb :"english/inversionistas/ri-tenedores"
 end
 get '/en/inversionistas/distribuciones' do
+  @title = ""
+  @menu = "Inversionistas"
   @ri_menu = 4
   erb :"english/inversionistas/ri-distribuciones"
 end
 get '/en/inversionistas/glosario' do
+  @title = ""
+  @menu = "Inversionistas"
   @ri_menu = 4
   erb :"english/inversionistas/ri-glosario"
 end
 
+# My Helpers
+helpers do
+  def change_language
+     if request.path_info=="/"
+      "/en"
+    elsif @locale =="es"
+      request.path_info.sub('es', 'en')  
+    elsif  @locale =="en"
+      
+      request.path_info.sub('en', 'es') 
+    end
 
-
-
+  end
+end
 
 
