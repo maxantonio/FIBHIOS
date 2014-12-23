@@ -421,3 +421,7 @@ margin-right: auto;
 padding-left: 42px;
 color: #3f8dbf;
 }
+
+#header-default.affix{
+    position: static !important;
+}
