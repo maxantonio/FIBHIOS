@@ -10,7 +10,7 @@ end
 get '/' do
   @locale = "es"
   erb :index
-  
+
 end
 
 get '/es' do
@@ -39,7 +39,7 @@ end
 get '/es/perfil' do
     @title = "Nuestro perfil"
     @menu = "Nosotros"
-    erb :perfil, :layout => :"layouts/content_layout"    
+    erb :perfil, :layout => :"layouts/content_layout"
 end
 
 get '/es/filosofia' do
@@ -103,9 +103,9 @@ get '/es/propiedades/andamar-I' do
   erb :"propiedades/andamar-I"
 end
 
-get '/es/propiedades/andamar-II' do
-  erb :"propiedades/andamar-II"
-end
+# get '/es/propiedades/andamar-II' do
+#   erb :"propiedades/andamar-II"
+# end
 
 get '/es/propiedades/andares' do
   erb :"propiedades/andares"
@@ -123,9 +123,9 @@ get '/es/propiedades/oficinas-ci-banco' do
   erb :"propiedades/oficinas-ci-banco"
 end
 
-get '/es/propiedades/picacho' do
-  erb :"propiedades/picacho"
-end
+# get '/es/propiedades/picacho' do
+#   erb :"propiedades/picacho"
+# end
 
 get '/es/propiedades/universidad' do
   erb :"propiedades/universidad"
@@ -181,7 +181,7 @@ get '/es/inversionistas/atractivo' do
     @ri_menu = 2
     erb :"inversionistas/ri-atractivo"
 end
-#Gobierno corporativo 
+#Gobierno corporativo
 get '/es/inversionistas/compromiso' do
     @title = ""
     @menu = "Inversionistas"
@@ -279,9 +279,9 @@ get '/en/propiedades/andamar-I' do
   erb :"english/propiedades/andamar-I"
 end
 
-get '/en/propiedades/andamar-II' do
-  erb :"english/propiedades/andamar-II"
-end
+# get '/en/propiedades/andamar-II' do
+#   erb :"english/propiedades/andamar-II"
+# end
 
 get '/en/propiedades/andares' do
   erb :"english/propiedades/andares"
@@ -299,9 +299,9 @@ get '/en/propiedades/oficinas-ci-banco' do
   erb :"english/propiedades/oficinas-ci-banco"
 end
 
-get '/en/propiedades/picacho' do
-  erb :"english/propiedades/picacho"
-end
+# get '/en/propiedades/picacho' do
+#   erb :"english/propiedades/picacho"
+# end
 
 get '/en/propiedades/universidad' do
   erb :"english/propiedades/universidad"
@@ -405,13 +405,11 @@ helpers do
      if request.path_info=="/"
       "/en"
     elsif @locale =="es"
-      request.path_info.sub('es', 'en')  
+      request.path_info.sub('es', 'en')
     elsif  @locale =="en"
-      
-      request.path_info.sub('en', 'es') 
+
+      request.path_info.sub('en', 'es')
     end
 
   end
 end
-
-
