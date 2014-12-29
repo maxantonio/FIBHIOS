@@ -425,3 +425,7 @@ color: #3f8dbf;
 #header-default.affix{
     position: static !important;
 }
+
+.milestone-counter i {
+  color: #ffffff;
+}
