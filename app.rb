@@ -7,6 +7,9 @@ before  '/en/*' do
 @locale= "en"
 end
 
+
+before do @title = 'Fideicomiso Bursátil Hipotecario' end
+
 get '/' do
   @locale = "es"
   erb :index
