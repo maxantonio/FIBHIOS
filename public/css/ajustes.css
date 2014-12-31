@@ -193,7 +193,7 @@ margin-right: 15px;
 }
 
 .home-services {
-  background-color: #0D2541;
+  background-color: #091B30;
 }
 
 .home-services a{
@@ -204,14 +204,14 @@ margin-right: 15px;
 width: 0;
 height: 0;
 float: left;
-border-top: 60px solid #0D2541;
+border-top: 60px solid #091B30;
 border-right: 105px solid transparent;
 }
 #triangle-topright-color{
 width: 0;
 height: 0;
 float: right;
-border-top: 60px solid #0D2541;
+border-top: 60px solid #091B30;
 border-left: 105px solid transparent;
 }
 
@@ -429,5 +429,3 @@ color: #3f8dbf;
 .milestone-counter i {
   color: #ffffff;
 }
-
-
