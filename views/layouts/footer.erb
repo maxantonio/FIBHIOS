@@ -19,12 +19,12 @@
                         <h3>Contacto</h3>
                     </div><!-- end title -->
                         <p>Si desea contactarnos nos puede localizar en cualquiera de los siguientes medios</p>
-                <div class="contact-info"> 
+                <div class="contact-info">
                 <i class="fa fa-map-marker"></i> Paseo de los Tamarindos 400-B Piso 10,<br />
                 Colonia Bosques de las Lomas,<br>
                 C.P. 05120, México, D.F.<br>
                 <!-- <i class="fa fa-phone"></i> +55 123 456 789 <br /> -->
-                  </div> 
+                  </div>
                     </div><!-- end widget -->
             </div><!-- end columns -->
         	<div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
@@ -32,13 +32,13 @@
                     <div class="title">
                         <h3>FIBHIOS en los medios</h3>
                     </div><!-- end title -->
-                        
-                <div class="contact-info"> 
+
+                <div class="contact-info">
                 <i class="fa fa-rss"></i> CIBanco y Grupo Sordo Madaleno alistan novena Fibra<br>
                 <a href="http://www.elfinanciero.com.mx/empresas/cibanco-y-grupo-sordo-madaleno-alistan-novena-fibra.html" target="_blank">El financiero</a><br />
                 <i class="fa fa-rss"></i> Fibra Inmobiliaria debutará en la Bolsa Mexicana de Valores<br><a href="http://www.cnnexpansion.com/negocios/2014/09/25/fibra-inmobiliaria-debutara-en-la-bolsa-mexicana-de-valores" target="_blank">CNN Expansión</a><br />
-              
-                  </div> 
+
+                  </div>
                     </div><!-- end widget -->
             </div><!-- end columns -->
         	<div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
@@ -48,12 +48,16 @@
                     </div><!-- end title -->
 					<div class="newsletter_widget">
                     	<p>Suscríbase a nuestro boletín en donde recibirá periódicamente en su e-mail información relacionada a nuestra compañia</p>
-                        <form action="#" class="newsletter_form">
-                            <input type="text" class="form-control" placeholder="correo electrónico"> 
-                            <a href="/" class="btn btn-primary pull-right">Subscribirse</a>    
+
+                        <form action="/mailcontacto" class="newsletter_form" method="post">
+													<input type="hidden" name="name" value="usuario no registrado" >
+													<input type="hidden" name="subject" value="Visitante solicita suscripción al boletín de noticias con el mail anterior" >
+                          <input type="text" class="form-control" name="email" placeholder="correo electrónico">
+													<button type="submit" value="SEND" id="submit" class="btn btn-primary pull-right">Subscribirse</button>
+
                         </form><!-- end newsletter form -->
 					</div>
                 </div><!-- end widget -->
-            </div><!-- end columns --> 
+            </div><!-- end columns -->
     	</div><!-- end container -->
     </footer>

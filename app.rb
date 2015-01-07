@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'i18n'
+
 before  '/es/*' do
 @locale= "es"
 end
@@ -37,6 +38,30 @@ get '/es/404' do
   erb :pagina404
 end
 
+post '/mailcontacto' do
+  require 'pony'
+
+  from = "contacto@fibhios.com"
+  subject = "Nuevo mensaje de contacto a FIBHIOS"
+
+  Pony.mail(
+  :from => from,
+  :to => 'inversionistas@fibhios.com',
+  :subject => subject,
+  :headers => { 'Content-Type' => 'text/html' },
+  :body => erb(:"globales/mail"),
+  :via => :smtp,
+  :via_options => {
+    :address              => 'smtp.mailgun.org',
+    :port                 => '587',
+    :enable_starttls_auto => true,
+    :user_name            => 'postmaster@irstrat.com',
+    :password             => '5ptmod-dfz40',
+    :authentication       => :plain,
+    :domain               => "irstrat.com"
+    })
+    redirect '/'
+  end
 
 # Nostros
 get '/es/perfil' do
