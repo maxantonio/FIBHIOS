@@ -13,13 +13,13 @@ before do @title = 'Fideicomiso Bursátil Hipotecario' end
 
 get '/' do
   @locale = "es"
-  erb :index
+  erb :"es/vistas/index"
 
 end
 
 get '/es' do
   @locale = "es"
-  erb :index
+  erb :"es/vistas/index"
 end
 
 get '/en' do
@@ -32,10 +32,10 @@ end
 #globales
 not_found do
   status 404
-  erb :pagina404
+  erb :"/es/vistas/Independientes/pagina404"
 end
 get '/es/404' do
-  erb :pagina404
+  erb :"/es/vistas/Independientes/pagina404"
 end
 
 post '/mailcontacto' do
@@ -49,7 +49,7 @@ post '/mailcontacto' do
   :to => 'inversionistas@fibhios.com',
   :subject => subject,
   :headers => { 'Content-Type' => 'text/html' },
-  :body => erb(:"globales/mail"),
+  :body => erb(:"/es/vistas/Independientes/mail"),
   :via => :smtp,
   :via_options => {
     :address              => 'smtp.mailgun.org',
@@ -63,209 +63,229 @@ post '/mailcontacto' do
     redirect '/'
   end
 
-# Nostros
-get '/es/perfil' do
-    @title = "Nuestro perfil"
-    @menu = "Nosotros"
-    erb :perfil, :layout => :"layouts/content_layout"
+
+
+                                      # Menu 1
+
+get '/es/directivos' do
+  @title = "Equipo directivo"
+  @menu = "Nosotros"
+  erb :"/es/vistas/Menu-1/directivos"
+
+end
+
+get '/es/estructura' do
+  @title = "Estructura de participación"
+  @menu = "Nosotros"
+  erb :"/es/vistas/Menu-1/estructura"
+
 end
 
 get '/es/filosofia' do
-    @title = "Filosofía corporativa"
-    @menu = "Nosotros"
-    erb :filosofia
+  @title = "Filosofía corporativa"
+  @menu = "Nosotros"
+  erb :"/es/vistas/Menu-1/filosofia"
 
 end
-get '/es/directivos' do
-    @title = "Equipo directivo"
-    @menu = "Nosotros"
-    erb :directivos
 
+get '/es/perfil' do
+  @title = "Nuestro perfil"
+  @menu = "Nosotros"
+  erb :"/es/vistas/Menu-1/perfil", :layout => :"es/plantillas/content_layout"
 end
-get '/es/estructura' do
-    @title = "Estructura de participación"
-    @menu = "Nosotros"
-    erb :estructura
 
+get '/es/numeros' do
+  @title = "FIBHIOS en números"
+  @menu = "Nosotros"
+  erb :"/es/vistas/Menu-1/numeros"
 end
+
+
+                                # Menu 2
 
 get '/es/creditos' do
     @title = "Créditos"
-    erb :creditos
-
-end
-
-# portafolio
-get '/es/propiedades' do
-    @title = "Propiedades relacionadas"
-    erb :propiedades
-
-end
-
-get '/es/operacion' do
-    @title = "Operación de propiedades"
-    erb :operacion
-
+    erb :"/es/vistas/Menu-2/creditos"
 end
 
 get '/es/distribucion' do
-    @title = "Distribución de propiedades"
-    erb :distribucion
-
-end
-get '/es/numeros' do
-    @title = "FIBHIOS en números"
-    erb :numeros
-
-end
-
-#contacto
-get '/es/contacto' do
-    @title = "Contacto"
-    erb :contacto
-
+  @title = "Distribución de propiedades"
+  erb :"/es/vistas/Menu-2/distribucion"
 end
 
 
-# Propiedades
-get '/es/propiedades/antara' do
-    @title = "Antara"
-    erb :"propiedades/antara"
-
+get '/es/operacion' do
+  @title = "Operación de propiedades"
+  erb :"/es/vistas/Menu-2/operacion"
 end
+
+
+get '/es/propiedades' do
+    @title = "Propiedades relacionadas"
+    erb :"/es/vistas/Menu-2/propiedades"
+end
+
+
+
+                                            # Menu 3
+get '/es/inversionistas/compromiso' do
+  @title = "Compromiso"
+  @menu = "Inversionistas"
+  @ri_menu = 3
+  erb :"/es/vistas/Menu-3/ri-compromiso"
+end
+
+get '/es/inversionistas/distribuciones' do
+  @title = "Distribuciones"
+  @menu = "Inversionistas"
+  @ri_menu = 4
+  erb :"/es/vistas/Menu-3/ri-distribuciones"
+end
+
+get '/es/inversionistas/modelo' do
+  @title = "Modelo de negocio"
+  @menu = "Inversionistas"
+  @ri_menu = 2
+  erb :"/es/vistas/Menu-3/ri-modelo"
+end
+
+get '/es/inversionistas/perfil' do
+  @title = "Perfil"
+  @menu = "Inversionistas"
+  @ri_menu = 1
+  erb :"/es/vistas/Menu-3/ri-perfil"
+end
+
+
+
+              # Propiedades
 
 get '/es/propiedades/andamar-I' do
-   @title = "Andamar I"
-  erb :"propiedades/andamar-I"
+  @title = "Andamar I"
+  erb :"/es/vistas/propiedades/andamar-I"
 end
 
 # get '/es/propiedades/andamar-II' do
-#   erb :"propiedades/andamar-II"
+#   erb :"/es/vistas/propiedades/andamar-II"
 # end
 
 get '/es/propiedades/andares' do
   @title = "Andares"
-  erb :"propiedades/andares"
+  erb :"/es/vistas/propiedades/andares"
 end
 
 get '/es/propiedades/angelopolis' do
   @title = "Angeopolis"
-  erb :"propiedades/angelopolis"
+  erb :"/es/vistas/propiedades/angelopolis"
+end
+
+get '/es/propiedades/antara' do
+    @title = "Antara"
+    erb :"/es/vistas/propiedades/antara"
 end
 
 get '/es/propiedades/luxury-hall' do
   @title = "Luxury Hall"
-  erb :"propiedades/luxury-hall"
+  erb :"/es/vistas/propiedades/luxury-hall"
 end
 
 get '/es/propiedades/oficinas-ci-banco' do
   @title = "Oficinas CI Banco"
-  erb :"propiedades/oficinas-ci-banco"
+  erb :"/es/vistas/propiedades/oficinas-ci-banco"
 end
 
 # get '/es/propiedades/picacho' do
-#   erb :"propiedades/picacho"
+#   erb :"/es/vistas/propiedades/picacho"
 # end
 
 get '/es/propiedades/universidad' do
   @title = "Universidad"
-  erb :"propiedades/universidad"
+  erb :"/es/vistas/propiedades/universidad"
 end
 
-#inversionistas
-##FIBHIOS
-get '/es/inversionistas/perfil' do
-    @title = "Perfil"
-    @menu = "Inversionistas"
-    @ri_menu = 1
-    erb :"inversionistas/ri-perfil"
 
 
+                          # Independientes
+
+get '/es/contacto' do
+  @title = "Contacto"
+  erb :"/es/vistas/Independientes/contacto"
 end
+
+
+
+
+                              #Inversionistas
+
+
+get '/es/inversionistas/administrador' do
+  @title = "Nuestro Administrador"
+  @menu = "Inversionistas"
+  @ri_menu = 3
+  erb :"/es/vistas/inversionistas/ri-administrador"
+end
+
+get '/es/inversionistas/atractivo' do
+  @title = "Atractivo de inversión"
+  @menu = "Inversionistas"
+  @ri_menu = 2
+  erb :"/es/vistas/inversionistas/ri-atractivo"
+end
+
+get '/es/inversionistas/comites' do
+  @title = "Comités"
+  @menu = "Inversionistas"
+  @ri_menu = 3
+  erb :"/es/vistas/inversionistas/ri-comites"
+end
+
+get '/es/inversionistas/comite-tecnico' do
+  @title = "Comité Técnico"
+  @menu = "Inversionistas"
+  @ri_menu = 3
+  erb :"/es/vistas/inversionistas/ri-comitetecnico"
+end
+
+get '/es/inversionistas/directivos' do
+  @title = "Equipo directivo"
+  @menu = "Inversionistas"
+  @ri_menu = 1
+  erb :"/es/vistas/inversionistas/ri-directivos"
+end
+
+get '/es/inversionistas/estructura' do
+  @title = "Estructura de participación"
+  @menu = "Inversionistas"
+  @ri_menu = 2
+  erb :"/es/vistas/inversionistas/ri-estructura"
+end
+
+get '/es/inversionistas/glosario' do
+  @title = "Glosario"
+  @menu = "Inversionistas"
+  @ri_menu = 4
+  erb :"/es/vistas/inversionistas/ri-glosario"
+end
+
 get '/es/inversionistas/marco-economico' do
     @title = "Marco económico"
     @menu = "Inversionistas"
     @ri_menu = 1
-    erb :"inversionistas/ri-marco"
-
+    erb :"/es/vistas/inversionistas/ri-marco"
 end
 
-get '/es/inversionistas/perfil' do
-    @title = "Perfil"
-    @menu = "Inversionistas"
-    @ri_menu = 1
-    erb :"inversionistas/ri-perfil"
-
-end
-get '/es/inversionistas/directivos' do
-    @title = "Equipo directivo"
-    @menu = "Inversionistas"
-    @ri_menu = 1
-    erb :"inversionistas/ri-directivos"
-end
-##Estrategia
-get '/es/inversionistas/estructura' do
-    @title = "Estructura de participación"
-    @menu = "Inversionistas"
-    @ri_menu = 2
-    erb :"inversionistas/ri-estructura"
-end
-get '/es/inversionistas/modelo' do
-    @title = "Modelo de negocio"
-    @menu = "Inversionistas"
-    @ri_menu = 2
-    erb :"inversionistas/ri-modelo"
-end
-get '/es/inversionistas/atractivo' do
-    @title = "Atractivo de inversión"
-    @menu = "Inversionistas"
-    @ri_menu = 2
-    erb :"inversionistas/ri-atractivo"
-end
-#Gobierno corporativo
-get '/es/inversionistas/compromiso' do
-    @title = "Compromiso"
-    @menu = "Inversionistas"
-    @ri_menu = 3
-    erb :"inversionistas/ri-compromiso"
-end
-get '/es/inversionistas/comite-tecnico' do
-    @title = "Comité Técnico"
-    @menu = "Inversionistas"
-    @ri_menu = 3
-    erb :"inversionistas/ri-comitetecnico"
-end
-get '/es/inversionistas/comites' do
-    @title = "Comités"
-    @menu = "Inversionistas"
-    @ri_menu = 3
-    erb :"inversionistas/ri-comites"
-end
-get '/es/inversionistas/administrador' do
-    @title = "Nuestro Administrador"
-    @menu = "Inversionistas"
-    @ri_menu = 3
-    erb :"inversionistas/ri-administrador"
-end
-#Informacion bursatil
 get '/es/inversionistas/tenedores' do
     @title = "Asamblea de Tenedores"
     @menu = "Inversionistas"
     @ri_menu = 4
-    erb :"inversionistas/ri-tenedores"
+    erb :"/es/vistas/inversionistas/ri-tenedores"
 end
-get '/es/inversionistas/distribuciones' do
-    @title = "Distribuciones"
-    @menu = "Inversionistas"
-    @ri_menu = 4
-    erb :"inversionistas/ri-distribuciones"
-end
-get '/es/inversionistas/glosario' do
-    @title = "Glosario"
-    @menu = "Inversionistas"
-    @ri_menu = 4
-    erb :"inversionistas/ri-glosario"
-end
+
+
+
+
+
+
 
 
                                                           # Paginas en ingles

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+
+
+
+
+<%= erb :"es/layouts/generales/head" %>
+
+<body>
+<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
+
+<%= erb :"es/layouts/generales/preloader" %>
+
+<%= erb :"es/layouts/generales/topbar" %>
+
+<%= erb :"es/layouts/generales/header" %>
+
+
+
+<!--wrapper-->
+<div class="theme-layout">
+
+
+  <!--Breadcump-->
+  <section class="wrapper-pgtitle">
+    <div class="container">
+      <div class="calloutbread">
+
+        <h2>  Contacto </h2>
+
+      </div>
+    </div>
+
+
+
+  </section>
+  <!--Breadcump END-->
+
+
+  <!--Contenido -->
+  <section class="white-wrapper nopadding">
+    <div id="map"></div>
+    <div class="container">
+      <div class="section-title-heading margin-top">
+        <h3 class="section-title">Envíenos su <span class="font-light">mensaje</span></h3>
+      </div>
+      <div class="contact_form">
+        <div id="message"></div>
+        <form id="contactform" action="/mailcontacto" name="contactform" method="post">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <input type="text" name="name" id="name" class="form-control" placeholder="Nombre">
+            <input type="text" name="email" id="email" class="form-control" placeholder="Email">
+            <input type="text" name="subject" id="subject" class="form-control" placeholder="Asunto">
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+
+            <textarea class="form-control" name="comment" id="comment" rows="6" placeholder="Mensaje"></textarea>
+            <button type="submit" value="SEND" id="submit" class="btn btn-lg btn-primary pull-right button-no-relative">Enviar  mensaje</button>
+          </div>
+        </form>
+        <br>
+      </div><!-- end contact-form --><br><br>
+    </div><!-- end container -->
+  </section>
+
+  <!--Contenido END -->
+
+
+
+
+
+
+
+
+  <%= erb :"es/layouts/generales/twitter" %>
+
+  <%= erb :"es/layouts/generales/footer" %>
+
+  <%= erb :"es/layouts/generales/copyrights" %>
+
+</div>
+
+<!--CONTENT END-->
+
+<!--Pagina off canvas-->
+<%= erb :"es/layouts/contenido/off-canvas-page" %>
+
+<!--Flechita de scroll-->
+<%= erb :"es/layouts/contenido/scroll-to-top" %>
+
+
+<!--Javascripts-->
+<%= erb :"es/layouts/contenido/js-contenidos" %>
+
+<!-- Polyfill para placeholder atrribute -->
+<!--[if lt IE 9]>
+<script src="/js/Polyfills/placeholders.jquery.min.js"></script>
+
+
+<![endif]-->
+<!-- Map code -->
+  <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
+  <script type="text/javascript">
+(function($) {
+  "use strict";
+    $("#header-default").affix({
+    offset: {
+    top: 100,
+    bottom: function () {
+    return (this.bottom = $('#copyrights').outerHeight(true))
+      }
+    }
+  })
+
+var map;
+var centerPosition = new google.maps.LatLng(19.387159,-99.253213,17);
+var style = [{
+  "stylers": [{
+    "visibility": "off"
+  }]
+}, {
+  "featureType": "road",
+    "stylers": [{
+    "visibility": "on"
+  }, {
+    "color": "#ffffff"
+  }]
+}, {
+  "featureType": "road.arterial",
+    "stylers": [{
+    "visibility": "on"
+  }, {
+    "color": "#fee379"
+  }]
+}, {
+  "featureType": "road.highway",
+    "stylers": [{
+    "visibility": "on"
+  }, {
+    "color": "#fee379"
+  }]
+}, {
+  "featureType": "landscape",
+    "stylers": [{
+    "visibility": "on"
+  }, {
+    "color": "#f3f4f4"
+  }]
+}, {
+  "featureType": "water",
+    "stylers": [{
+    "visibility": "on"
+  }, {
+    "color": "#7fc8ed"
+  }]
+}, {}, {
+  "featureType": "road",
+    "elementType": "labels",
+    "stylers": [{
+    "visibility": "on"
+  }]
+}, {
+  "featureType": "poi.park",
+    "elementType": "geometry.fill",
+    "stylers": [{
+    "visibility": "on"
+  }, {
+    "color": "#83cead"
+  }]
+}, {
+  "elementType": "labels",
+    "stylers": [{
+    "visibility": "on"
+  }]
+}, {
+  "featureType": "landscape.man_made",
+    "elementType": "geometry",
+    "stylers": [{
+    "weight": 0.9
+  }, {
+    "visibility": "off"
+  }]
+}]
+
+var options = {
+  zoom: 15,
+  center: centerPosition,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+map = new google.maps.Map($('#map')[0], options);
+map.setOptions({
+  styles: style
+});
+var marker = new google.maps.Marker({
+  position: centerPosition,
+  map: map,
+  icon: image,
+  shadow: shadow
+});
+})(jQuery);
+</script>
+
+</body>
+</html>

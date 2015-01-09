@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<%= erb :"es/layouts/generales/head" %>
+
+<body>
+
+<%= erb :"es/layouts/generales/preloader" %>
+
+<%= erb :"es/layouts/generales/topbar" %>
+
+<%= erb :"es/layouts/generales/header" %>
+
+
+
+<!--wrapper-->
+<div class="theme-layout">
+
+
+  <!--Breadcump-->
+  <section class="wrapper-pgtitle">
+    <div class="container">
+      <div class="calloutbread">
+
+        <h2>Andamar I</h2>
+
+        <ul class="breadcrumb">
+
+          <li><a href="#"> Portafolio </a></li>
+
+          <li>Propiedades relacionadas</li>
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div id="triangle-up"><a href="#" class="bonfire-slideout-button">
+      <div class="panel-bonfire"><i class="fa fa-plus"></i></div>
+    </a></div>
+  </section>
+  <!--Breadcump END-->
+
+
+  <!--Contenido -->
+  <section id="contenido" class="white-wrapper">
+    <div class="container">
+      <div class="row">
+        <div id="content" class="col-lg-12 col-sm-12 col-md-12 col-xs-12 single-portfolio">
+
+
+          <!--Parte de Imagenes-->
+          <div class="col-sm-4 padding-top">
+            <div class="portfolio_item">
+
+              <!--imagen grande-->
+              <div class="entry">
+                <img src="/images/fibhios/propiedades/AndamarI/Andamar1x380.jpg" alt="" class="img-responsive">
+              </div>
+            </div>
+            <!-- /botones de propiedades -->
+              <div class="text-center">
+              <br>
+              <div class="btn-group">
+                <a href="/es/propiedades/oficinas-ci-banco"><button type="button" class="btn btn-primary-bd">Propiedad anterior</button></a>
+                <a href="/es/propiedades/angelopolis"><button type="button" class="btn btn-primary-bd">Siguiente propiedad</button></a>
+              </div>
+              </div>
+              <!-- /botones de propiedades -->
+          </div>
+          <!--Parte de Imagenes END-->
+
+
+
+          <!--Parte de Texto-->
+          <div class="col-sm-8 padding-left-40">
+            <div class="product_details">
+
+              <!--titulo-->
+              <h3>Andamar I en números</h3>
+
+              <!--tablita-->
+              <ul>
+                <li><strong>Año de construcción:</strong>                Noviembre 2014</li>
+                <li><strong>AR: </strong>                               42,000 m²</li>
+                <li><strong>AR Privativo*:</strong>                     32,000 m²</li>
+                <li><strong>Administrador del inmueble: </strong>                GSM</li>
+                <li><strong>Afluencia anual de visitantes: </strong>     8 millones</li>
+                <li><strong>Principales arrendatarios: </strong>         Cinemex, Palacio de Hierro y The Home Store</li>
+              </ul>
+              <p class="legenda">*Área rentable de la unidad privativa acreedora del crédito (garantía) </p>
+            </div>
+
+            <!--texto de descripcion-->
+            <p>Andamar LifeStyle Center será un shopping center premium, ubicado en la ciudad de Boca del Río Veracruz, contará con un AR estimado de 42,000 m², al igual que los demás desarrollos de GSM se caracterizará por una arquitectura icónica, integrando diferentes elementos en su desarrollo como jardines y espejos de agua, contará en su oferta comercial con aproximadamente 110 tiendas, por lo que tendrá un portafolio bastante robusto de tiendas ancla y sub ancla. Contará con seis restaurantes, 11 salas de cine y cuatro niveles de estacionamiento con 2,293 cajones. Su cercanía a la playa, en conjunción con sus amenidades de primer nivel, dota a Andamar de un singular atractivo en la región.</p>
+
+
+          </div>
+          <!--Parte de Texto-->
+
+
+          <div class="clearfix"></div>
+
+        </div>
+      </div>
+      <br>
+    </div>
+  </section>
+
+  <!--Contenido END -->
+
+
+
+  <%= erb :"es/layouts/contenido/numeros-destacados" %>
+
+  <%= erb :"es/layouts/contenido/prospecto" %>
+
+  <%= erb :"es/layouts/generales/twitter" %>
+
+  <%= erb :"es/layouts/generales/footer" %>
+
+  <%= erb :"es/layouts/generales/copyrights" %>
+
+</div>
+
+<!--CONTENT END-->
+
+<!--Pagina off canvas-->
+<%= erb :"es/layouts/contenido/off-canvas-page" %>
+
+<!--Flechita de scroll-->
+<%= erb :"es/layouts/contenido/scroll-to-top" %>
+
+
+<!--Javascripts-->
+<%= erb :"es/layouts/contenido/js-contenidos" %>
+
+
+</body>
+</html>

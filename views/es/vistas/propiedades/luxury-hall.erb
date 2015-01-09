@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<%= erb :"es/layouts/generales/head" %>
+
+<body>
+
+<%= erb :"es/layouts/generales/preloader" %>
+
+<%= erb :"es/layouts/generales/topbar" %>
+
+<%= erb :"es/layouts/generales/header" %>
+
+
+
+<!--wrapper-->
+<div class="theme-layout">
+
+
+  <!--Breadcump-->
+  <section class="wrapper-pgtitle">
+    <div class="container">
+      <div class="calloutbread">
+
+        <h2>Luxury Hall</h2>
+
+        <ul class="breadcrumb">
+
+          <li><a href="#"> Portafolio </a></li>
+
+          <li>Propiedades relacionadas</li>
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div id="triangle-up"><a href="#" class="bonfire-slideout-button">
+      <div class="panel-bonfire"><i class="fa fa-plus"></i></div>
+    </a></div>
+  </section>
+  <!--Breadcump END-->
+
+
+  <!--Contenido -->
+  <section id="contenido" class="white-wrapper">
+    <div class="container">
+      <div class="row">
+        <div id="content" class="col-lg-12 col-sm-12 col-md-12 col-xs-12 single-portfolio">
+
+
+          <!--Parte de Imagenes-->
+          <div class="col-sm-4 padding-top">
+            <div class="portfolio_item">
+
+              <!--imagen grande-->
+              <div class="entry">
+                <img src="/images/fibhios/propiedades/LuxuryHall/luxuryhallx380.jpg" alt="" class="img-responsive">
+              </div>
+
+            </div>
+             <!-- /botones de propiedades -->
+              <div class="text-center">
+              <br>
+              <div class="btn-group">
+                <a href="/es/propiedades/andares"><button type="button" class="btn btn-primary-bd">Propiedad anterior</button></a>
+                <a href="/es/propiedades/oficinas-ci-banco"><button type="button" class="btn btn-primary-bd">Siguiente propiedad</button></a>
+              </div>
+              </div>
+              <!-- /botones de propiedades -->
+          </div>
+          <!--Parte de Imagenes END-->
+
+
+
+          <!--Parte de Texto-->
+          <div class="col-sm-8 padding-left-40">
+            <div class="product_details">
+
+              <!--titulo-->
+              <h3>Luxury Hall en números</h3>
+
+              <!--tablita-->
+              <ul>
+                <li><strong>Termino de construcción:</strong>            2010</li>
+                <li><strong>AR: </strong>                               113,000 m²</li>
+                <li><strong>AR Privativo*:</strong>                     10,700 m²</li>
+                <li><strong>Administrador del inmueble: </strong>                GSM</li>
+                <li><strong>Afluencia anual de visitantes: </strong>     6.4 millones</li>
+              </ul>
+              <p class="legenda">*Área rentable de la unidad privativa acreedora del crédito (garantía) </p>
+            </div>
+
+            <!--texto de descripcion-->
+            <p>Luxury Hall es un centro comercial premium, con un AR de 113,000 m² y 100% de ocupación, ubicado en Puebla. Su diseño arquitectónico se distingue por su icónico techo de madera salam y un domo superior. Cuenta con 36 tiendas y un área central con un restaurante-bar. Luxury Hall fue desarrollado en un tiempo récord, entrando en operación en 2010.</p>
+
+
+          </div>
+          <!--Parte de Texto-->
+
+
+          <div class="clearfix"></div>
+
+        </div>
+      </div>
+      <br>
+    </div>
+  </section>
+
+  <!--Contenido END -->
+
+
+
+  <%= erb :"es/layouts/contenido/numeros-destacados" %>
+
+  <%= erb :"es/layouts/contenido/prospecto" %>
+
+  <%= erb :"es/layouts/generales/twitter" %>
+
+  <%= erb :"es/layouts/generales/footer" %>
+
+  <%= erb :"es/layouts/generales/copyrights" %>
+
+</div>
+
+<!--CONTENT END-->
+
+<!--Pagina off canvas-->
+<%= erb :"es/layouts/contenido/off-canvas-page" %>
+
+<!--Flechita de scroll-->
+<%= erb :"es/layouts/contenido/scroll-to-top" %>
+
+
+<!--Javascripts-->
+<%= erb :"es/layouts/contenido/js-contenidos" %>
+
+
+</body>
+</html>
