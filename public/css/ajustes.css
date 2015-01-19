@@ -439,3 +439,8 @@ color: #3f8dbf;
 .contact_form textarea {
   height: 208px !important;
 }
+
+
+#formulario .popover-content {
+    color: black;
+}
