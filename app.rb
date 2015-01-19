@@ -232,6 +232,14 @@ get '/es/inversionistas/atractivo' do
   erb :"/es/vistas/inversionistas/ri-atractivo"
 end
 
+get '/es/inversionistas/ventajas' do
+  @title = "Ventaja Competitiva"
+  @menu = "Inversionistas"
+  @ri_menu = 2
+  erb :"/es/vistas/inversionistas/ri-ventajas"
+end
+
+
 get '/es/inversionistas/comites' do
   @title = "Comités"
   @menu = "Inversionistas"
@@ -426,6 +434,15 @@ get '/en/inversionistas/atractivo' do
   @ri_menu = 2
   erb :"english/inversionistas/ri-atractivo"
 end
+
+get '/en/inversionistas/ventajas' do
+  @title = "Competitive Advantage"
+  @menu = "Inversionistas"
+  @ri_menu = 2
+  erb :"english/inversionistas/ri-ventajas"
+end
+
+
 #Gobierno corporativo
 get '/en/inversionistas/compromiso' do
   @title = "Commitment"
