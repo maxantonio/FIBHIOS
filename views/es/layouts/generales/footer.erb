@@ -49,11 +49,15 @@
 					<div class="newsletter_widget">
                     	<p>Suscríbase a nuestro boletín en donde recibirá periódicamente en su e-mail información relacionada a nuestra compañia</p>
 
-                        <form action="/mailcontacto" class="newsletter_form" method="post">
+                        <form name="formulario" action="/mailcontacto" class="newsletter_form" method="post" >
 													<input type="hidden" name="name" value="usuario no registrado" >
 													<input type="hidden" name="subject" value="Visitante solicita suscripción al boletín de noticias con el mail anterior" >
-                          <input type="text" class="form-control" name="email" placeholder="correo electrónico">
-													<button type="submit" value="SEND" id="submit" class="btn btn-primary pull-right">Subscribirse</button>
+
+
+                          <input type="text" class="form-control" name="email" placeholder="correo electrónico" id="subscribir" data-toggle="popover" data-placement="bottom">
+
+
+													<button type="button" onclick="javascript:validaremail(this.form);" value="SEND"  class="btn btn-primary pull-right">Subscribirse</button>
 
                         </form><!-- end newsletter form -->
 					</div>
@@ -61,3 +65,37 @@
             </div><!-- end columns -->
     	</div><!-- end container -->
     </footer>
+
+
+
+<!--Validar email-->
+<script type="text/javascript">
+
+    function validaremail(formulario) {
+
+        if (validateEmail(document.formulario.email.value) == false){
+            $('#subscribir').popover({content: 'Dirección email errónea, rectifíquela por favor.'});
+            $('#subscribir').popover('show');
+        }
+
+        else {
+            $('#subscribir').attr("data-content", "Gracias por subscribirse a nuestras noticias.");
+            $('#subscribir').popover('show');
+
+            setTimeout(continueExecution, 1500);
+        }
+    }
+
+
+    function continueExecution()
+    {
+        document.formulario.submit();
+//        document.getElementsByClassName("formulario")[0].submit();
+    }
+
+    function validateEmail(email) {
+        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+    }
+
+</script>
