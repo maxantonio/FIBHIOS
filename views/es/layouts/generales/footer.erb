@@ -20,10 +20,10 @@
                     </div><!-- end title -->
                         <p>Si desea contactarnos nos puede localizar en cualquiera de los siguientes medios</p>
                 <div class="contact-info">
-                <i class="fa fa-map-marker"></i> Paseo de los Tamarindos 400-B Piso 10,<br />
+                <i class="fa fa-map-marker"></i> Paseo de los Tamarindos 400-B Piso 10,
                 Colonia Bosques de las Lomas,<br>
                 C.P. 05120, México, D.F.<br>
-                <!-- <i class="fa fa-phone"></i> +55 123 456 789 <br /> -->
+								<i class="fa fa-phone"></i> (55) 4747-7000 <br />
                   </div>
                     </div><!-- end widget -->
             </div><!-- end columns -->
@@ -54,7 +54,7 @@
 													<input type="hidden" name="subject" value="Visitante solicita suscripción al boletín de noticias con el mail anterior" >
 
 
-                          <input type="text" class="form-control" name="email" placeholder="email" id="subscribir" data-toggle="popover" data-placement="bottom">
+                          <input type="text" class="form-control" name="email" placeholder="correo electrónico" id="subscribir" data-toggle="popover" data-placement="bottom">
 
 
 													<button type="button" onclick="javascript:validaremail(this.form);" value="SEND"  class="btn btn-primary pull-right">Subscribirse</button>
@@ -74,20 +74,12 @@
     function validaremail(formulario) {
 
         if (validateEmail(document.formulario.email.value) == false){
-
-
-            <%= " $('#subscribir').popover({content: 'Dirección email errónea, rectifíquela por favor.'});" if @locale == "es" %>
-
-
+            $('#subscribir').popover({content: 'Dirección email errónea, rectifíquela por favor.'});
             $('#subscribir').popover('show');
         }
 
         else {
-
-            <%= "$('#subscribir').attr('data-content', 'Gracias por subscribirse a nuestras noticias.');" if  @locale == "es" %>
-
-
-
+            $('#subscribir').attr("data-content", "Gracias por subscribirse a nuestras noticias.");
             $('#subscribir').popover('show');
 
             setTimeout(continueExecution, 1500);
