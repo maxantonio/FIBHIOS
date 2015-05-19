@@ -169,10 +169,10 @@ end
 #   erb :"/es/vistas/propiedades/andamar-II"
 # end
 
-get '/es/propiedades/andares' do
-  @title = "Andares"
-  erb :"/es/vistas/propiedades/andares"
-end
+# get '/es/propiedades/andares' do
+#   @title = "Andares"
+#   erb :"/es/vistas/propiedades/andares"
+# end
 
 get '/es/propiedades/angelopolis' do
   @title = "Angeopolis"
@@ -364,10 +364,10 @@ end
 #   erb :"english/propiedades/andamar-II"
 # end
 
-get '/en/propiedades/andares' do
-      @title = "Andares"
-  erb :"english/propiedades/andares"
-end
+# get '/en/propiedades/andares' do
+#       @title = "Andares"
+#   erb :"english/propiedades/andares"
+# end
 
 get '/en/propiedades/angelopolis' do
       @title = "Angelopolis"
