@@ -69,7 +69,7 @@
 }
 
 .theme-layout {
-    padding-bottom: 20px;
+    padding-bottom: 0px;
 }
 
 .dropcap {
@@ -444,3 +444,7 @@ color: #3f8dbf;
 #formulario .popover-content {
     color: black;
 }
+
+
+#copyrights {
+  padding: 20px 0 22px;
