@@ -1,5 +1,8 @@
 require 'sinatra'
 require 'i18n'
+require 'sinatra/reloader' if development?
+require "better_errors" if development?
+
 
 before  '/es/*' do
 @locale= "es"
