@@ -3,3 +3,13 @@
 /public/images/fibhios/LayerSlider/Slide4/*.db
 /cmd.exe
 /Gemfile.lock
+
+/public/images/*.db
+
+/public/images/pf-slider/Thumbs.db
+
+/public/images/fibhios/*.db
+
+/public/images/fibhios/contenidos/*.db
+
+/public/images/medium/Thumbs.db
